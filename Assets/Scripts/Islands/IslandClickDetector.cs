@@ -15,4 +15,9 @@ public class IslandClickDetector: MonoBehaviour
         var position = Camera.main.ScreenToWorldPoint(mousePos);
         OnIslandClicked?.Invoke(position);
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        //collision.GetContacts
+    }
 }
