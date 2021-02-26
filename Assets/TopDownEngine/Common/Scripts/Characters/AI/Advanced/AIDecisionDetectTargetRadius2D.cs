@@ -85,6 +85,10 @@ namespace MoreMountains.TopDownEngine
             {
                 return false;
             }
+            if (_detectionCollider.gameObject == this.gameObject)
+            {
+                return false;
+            }
             else
             {
                 if (!ObstacleDetection)

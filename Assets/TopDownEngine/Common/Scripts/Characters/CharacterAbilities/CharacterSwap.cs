@@ -12,12 +12,18 @@ namespace MoreMountains.TopDownEngine
     [AddComponentMenu("TopDown Engine/Character/Abilities/Character Swap")]
     public class CharacterSwap : CharacterAbility
     {
+        [Header("Character Swap")]
         /// the order in which this character should be picked 
         [Tooltip("the order in which this character should be picked ")]
         public int Order = 0;
         /// the playerID to put back in the Character class once this character gets swapped
         [Tooltip("the playerID to put back in the Character class once this character gets swapped")]
         public string PlayerID = "Player1";
+
+        [Header("AI")]
+        /// if this is true, the AI Brain (if there's one on this character) will reset on swap
+        [Tooltip("if this is true, the AI Brain (if there's one on this character) will reset on swap")]
+        public bool ResetAIBrainOnSwap = true;
 
         protected string _savedPlayerID;
         protected Character.CharacterTypes _savedCharacterType;
@@ -63,6 +69,10 @@ namespace MoreMountains.TopDownEngine
             if (_aiBrain != null)
             {
                 _aiBrain.BrainActive = true;
+                if (ResetAIBrainOnSwap)
+                {
+                    _aiBrain.ResetBrain();
+                }
             }
 
         }
