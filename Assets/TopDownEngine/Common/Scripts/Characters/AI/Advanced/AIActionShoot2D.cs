@@ -13,6 +13,12 @@ namespace MoreMountains.TopDownEngine
     //[RequireComponent(typeof(CharacterHandleWeapon))]
     public class AIActionShoot2D : AIAction
     {
+        public enum AimOrigins { Transform, SpawnPoint }
+        
+        [Header("Behaviour")]
+        /// the origin we'll take into account when computing the aim direction towards the target
+        [Tooltip("the origin we'll take into account when computing the aim direction towards the target")]
+        public AimOrigins AimOrigin = AimOrigins.Transform;
         /// if true, the Character will face the target (left/right) when shooting
         [Tooltip("if true, the Character will face the target (left/right) when shooting")]
         public bool FaceTarget = true;
@@ -131,7 +137,7 @@ namespace MoreMountains.TopDownEngine
 
                 if (_weaponAim != null)
                 {
-                    if (_projectileWeapon != null)
+                    if ((AimOrigin == AimOrigins.SpawnPoint) &&_projectileWeapon != null)
                     {
                         _projectileWeapon.DetermineSpawnPosition();
                         _weaponAimDirection = _brain.Target.position - _projectileWeapon.SpawnPosition;

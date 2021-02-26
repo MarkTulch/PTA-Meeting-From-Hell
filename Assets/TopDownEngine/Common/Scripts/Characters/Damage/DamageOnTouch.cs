@@ -71,6 +71,19 @@ namespace MoreMountains.TopDownEngine
         [Tooltip("The duration of the invincibility frames after the hit (in seconds)")]
         public float DamageTakenInvincibilityDuration = 0.5f;
 
+        [Header("Buff")]
+        [MMInformation("These settings control which buffs, if any, are applied by the object", MoreMountains.Tools.MMInformationAttribute.InformationType.Info, false)]
+        /// Whether a buff should be applied to the target struck by this projectile
+        [Tooltip("Whether a buff should be applied to the target struck by this projectile")]
+        public bool ShouldBuffTarget = false;
+        //// The amount of time that a buff should be applied
+        [Tooltip("The amount of time that a buff should be applied")]
+        public float BuffApplicationTime = 1.0f;
+        /// The attack speed multiplier applied to the target
+        [Tooltip("The attack speed multiplier applied to the target")]
+        public float AttackSpeedMultiplier = 1.0f;
+
+
         [Header("Feedbacks")]
         /// the feedback to play when hitting a Damageable
         [Tooltip("the feedback to play when hitting a Damageable")]
@@ -91,6 +104,7 @@ namespace MoreMountains.TopDownEngine
         protected TopDownController _topDownController;
         protected TopDownController _colliderTopDownController;
         protected Rigidbody _colliderRigidBody;
+        protected CharacterHandleWeapon _colliderCharacterHandleWeapon;
         protected Health _health;
         protected List<GameObject> _ignoredGameObjects;
         protected Vector3 _collisionPoint;
@@ -294,6 +308,7 @@ namespace MoreMountains.TopDownEngine
         {
             // if what we're colliding with is a TopDownController, we apply a knockback force
             _colliderTopDownController = health.gameObject.MMGetComponentNoAlloc<TopDownController>();
+            _colliderCharacterHandleWeapon = health.gameObject.MMGetComponentNoAlloc<CharacterHandleWeapon>();
             _colliderRigidBody = health.gameObject.MMGetComponentNoAlloc<Rigidbody>();
 
             if ((_colliderTopDownController != null) && (DamageCausedKnockbackForce != Vector3.zero) && (!_colliderHealth.Invulnerable) && (!_colliderHealth.ImmuneToKnockback))
@@ -323,6 +338,12 @@ namespace MoreMountains.TopDownEngine
 
             // we apply the damage to the thing we've collided with
             _colliderHealth.Damage(DamageCaused, gameObject, InvincibilityDuration, InvincibilityDuration);
+
+            if ( _colliderCharacterHandleWeapon != null && ShouldBuffTarget == true)
+            {
+                _colliderCharacterHandleWeapon.CurrentWeapon.SetTimeBetweenUsesAccelerator(AttackSpeedMultiplier, BuffApplicationTime);
+            }
+
             if (DamageTakenEveryTime + DamageTakenDamageable > 0)
             {
                 SelfDamage(DamageTakenEveryTime + DamageTakenDamageable);
