@@ -258,7 +258,7 @@ namespace MoreMountains.TopDownEngine
         /// <summary>
         /// Switches to the next weapon in line
         /// </summary>
-		protected virtual void SwitchWeapon()
+		public virtual void SwitchWeapon()
 		{
 			// if there's no character handle weapon component, we can't switch weapon, we do nothing and exit
 			if ((CharacterHandleWeapon == null) || (WeaponInventory == null))

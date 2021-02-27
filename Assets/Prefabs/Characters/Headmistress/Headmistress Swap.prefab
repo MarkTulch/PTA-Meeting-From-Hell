@@ -602,8 +602,7 @@ MonoBehaviour:
   AbilityPermitted: 1
   BlockingMovementStates: 
   BlockingConditionStates: 
-  InitialWeapon: {fileID: 114317679573123918, guid: d423787002a864146b2148c3550bd884,
-    type: 3}
+  InitialWeapon: {fileID: 0}
   CanPickupWeapons: 1
   WeaponUseFeedback: {fileID: 0}
   WeaponAttachment: {fileID: 8202364043443003530}
@@ -638,12 +637,13 @@ MonoBehaviour:
   AbilityPermitted: 1
   BlockingMovementStates: 
   BlockingConditionStates: 
-  MainInventoryName: KoalaMainInventory
-  WeaponInventoryName: KoalaWeaponInventory
+  MainInventoryName: HeadmistressMainInventory
+  WeaponInventoryName: HeadmistressWeaponInventory
   HotbarInventoryName: 
   WeaponRotationMode: 0
   AutoPickItems: []
-  AutoEquipWeaponOnStart: {fileID: 0}
+  AutoEquipWeaponOnStart: {fileID: 11400000, guid: d465ff3e0f911c94ba7abba8c6b48229,
+    type: 2}
   CharacterHandleWeapon: {fileID: 0}
 --- !u!114 &8202364043855772171
 MonoBehaviour:
@@ -667,6 +667,7 @@ MonoBehaviour:
   BlockingConditionStates: 
   Order: 1
   PlayerID: Player1
+  ResetAIBrainOnSwap: 1
 --- !u!114 &8202364043855772168
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -49,6 +49,11 @@ namespace MoreMountains.TopDownEngine
             _character.PlayerID = PlayerID;
             _character.CharacterType = Character.CharacterTypes.Player;
             _character.SetInputManager();
+
+            if (_character.GetComponent<CharacterInventory>() != null)
+            {
+                _character.GetComponent<CharacterInventory>().SwitchWeapon();
+            }
             if (_aiBrain != null)
             {
                 _aiBrain.BrainActive = false;
@@ -66,6 +71,11 @@ namespace MoreMountains.TopDownEngine
             _characterMovement.SetHorizontalMovement(0f);
             _characterMovement.SetVerticalMovement(0f);
             _character.ResetInput();
+
+            if (_character.GetComponent<CharacterInventory>() != null)
+            {
+                _character.GetComponent<CharacterInventory>().SwitchWeapon();
+            }
             if (_aiBrain != null)
             {
                 _aiBrain.BrainActive = true;
