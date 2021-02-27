@@ -241,7 +241,7 @@ namespace MoreMountains.TopDownEngine
                 return;
             }
 
-            for (int i = 0; i < MainInventory.Content.Length ; i++)
+            for (int i = 0; i < MainInventory.Content.Length; i++)
 			{
 				if (InventoryItem.IsNull(MainInventory.Content[i]))
 				{

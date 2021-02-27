@@ -607,8 +607,8 @@ MonoBehaviour:
   AbilityPermitted: 1
   BlockingMovementStates: 
   BlockingConditionStates: 
-  MainInventoryName: KoalaMainInventory
-  WeaponInventoryName: KoalaWeaponInventory
+  MainInventoryName: 
+  WeaponInventoryName: 
   HotbarInventoryName: 
   WeaponRotationMode: 0
   AutoPickItems: []
@@ -637,6 +637,7 @@ MonoBehaviour:
   Order: 2
   PlayerID: Player1
   ResetAIBrainOnSwap: 1
+  SwitchWeaponsOnSwap: 0
 --- !u!114 &5284384703788990756
 MonoBehaviour:
   m_ObjectHideFlags: 0

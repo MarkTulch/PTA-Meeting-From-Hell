@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9529ae2b2ee0d1e4d802b51d271424c3, type: 3}
   m_Name: HeadmistressAIWeapon
   m_EditorClassIdentifier: 
-  ItemID: HMAI
+  ItemID: a
   TargetInventoryName: HeadmistressMainInventory
   Usable: 0
   Equippable: 1
   Quantity: 0
-  ItemName: Ranged Attack
+  ItemName: HMAI
   ShortDescription: A sternly worded letter.
   Description: 'A single-target attack to whittle down enemies. '
   CanMoveObject: 1
@@ -75,5 +75,5 @@ MonoBehaviour:
   UseDefaultSoundsIfNull: 1
   EquippableWeapon: {fileID: 114317679573123918, guid: d423787002a864146b2148c3550bd884,
     type: 3}
-  AutoEquipMode: 2
+  AutoEquipMode: 1
   HandleWeaponID: 1

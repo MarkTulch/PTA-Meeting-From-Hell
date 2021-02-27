@@ -659,3 +659,4 @@ MonoBehaviour:
   Order: 0
   PlayerID: Player1
   ResetAIBrainOnSwap: 1
+  SwitchWeaponsOnSwap: 0

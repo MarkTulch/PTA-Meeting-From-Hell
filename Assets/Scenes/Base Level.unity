@@ -4419,8 +4419,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DrawContentInInspector: 1
   Content:
-  - {fileID: 11400000, guid: d465ff3e0f911c94ba7abba8c6b48229, type: 2}
-  - {fileID: 11400000, guid: c72971f0d10793c438f8a7dcc9c6c4d4, type: 2}
+  - {fileID: 0}
+  - {fileID: 0}
   InventoryType: 0
   TargetTransform: {fileID: 0}
   Persistent: 1
@@ -7532,7 +7532,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1477311720518634, guid: b6993e89d9af3f64182a41c77cf345c2, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1826730471232328, guid: b6993e89d9af3f64182a41c77cf345c2, type: 3}
       propertyPath: m_IsActive
@@ -7581,6 +7581,11 @@ PrefabInstance:
     - target: {fileID: 4253665730406636, guid: b6993e89d9af3f64182a41c77cf345c2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 20803883043551940, guid: b6993e89d9af3f64182a41c77cf345c2,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114701149650354756, guid: b6993e89d9af3f64182a41c77cf345c2,
         type: 3}
@@ -12184,6 +12189,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1794118820}
     m_Modifications:
+    - target: {fileID: 4188420971239000913, guid: 0c0abc4727ff6ce48bcddf56a6e47f89,
+        type: 3}
+      propertyPath: SwitchWeaponsOnSwap
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4188420971239000920, guid: 0c0abc4727ff6ce48bcddf56a6e47f89,
         type: 3}
       propertyPath: m_Name
@@ -12644,6 +12654,16 @@ PrefabInstance:
       propertyPath: States.Array.data[2].Transitions.array.Array.data[0].FalseState
       value: Moving
       objectReference: {fileID: 0}
+    - target: {fileID: 5284384703788990758, guid: d132c19c2c0b0c24484d0b21422f5ad7,
+        type: 3}
+      propertyPath: MainInventoryName
+      value: KoalaMainInventory
+      objectReference: {fileID: 0}
+    - target: {fileID: 5284384703788990758, guid: d132c19c2c0b0c24484d0b21422f5ad7,
+        type: 3}
+      propertyPath: WeaponInventoryName
+      value: KoalaWeaponInventory
+      objectReference: {fileID: 0}
     - target: {fileID: 5284384703788990813, guid: d132c19c2c0b0c24484d0b21422f5ad7,
         type: 3}
       propertyPath: m_Name
@@ -12713,6 +12733,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1794118820}
     m_Modifications:
+    - target: {fileID: 6262560849819807106, guid: 8e58a68203e3b794499fd28f1955679d,
+        type: 3}
+      propertyPath: SwitchWeaponsOnSwap
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6262560849819807115, guid: 8e58a68203e3b794499fd28f1955679d,
         type: 3}
       propertyPath: m_Name
@@ -12864,9 +12889,40 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8202364043855772170, guid: 38a5e4735800d9c4aa946b5adfd35564,
         type: 3}
+      propertyPath: AutoPickItems.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8202364043855772170, guid: 38a5e4735800d9c4aa946b5adfd35564,
+        type: 3}
       propertyPath: AutoEquipWeaponOnStart
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8202364043855772170, guid: 38a5e4735800d9c4aa946b5adfd35564,
+        type: 3}
+      propertyPath: AutoPickItems.Array.data[0].Item
+      value: 
+      objectReference: {fileID: 11400000, guid: c72971f0d10793c438f8a7dcc9c6c4d4,
+        type: 2}
+    - target: {fileID: 8202364043855772170, guid: 38a5e4735800d9c4aa946b5adfd35564,
+        type: 3}
+      propertyPath: AutoPickItems.Array.data[1].Item
       value: 
       objectReference: {fileID: 11400000, guid: d465ff3e0f911c94ba7abba8c6b48229,
         type: 2}
+    - target: {fileID: 8202364043855772170, guid: 38a5e4735800d9c4aa946b5adfd35564,
+        type: 3}
+      propertyPath: WeaponRotationMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8202364043855772170, guid: 38a5e4735800d9c4aa946b5adfd35564,
+        type: 3}
+      propertyPath: AutoPickItems.Array.data[0].Quantity
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8202364043855772170, guid: 38a5e4735800d9c4aa946b5adfd35564,
+        type: 3}
+      propertyPath: AutoPickItems.Array.data[1].Quantity
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 38a5e4735800d9c4aa946b5adfd35564, type: 3}

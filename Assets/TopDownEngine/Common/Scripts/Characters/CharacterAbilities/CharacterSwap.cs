@@ -24,6 +24,10 @@ namespace MoreMountains.TopDownEngine
         /// if this is true, the AI Brain (if there's one on this character) will reset on swap
         [Tooltip("if this is true, the AI Brain (if there's one on this character) will reset on swap")]
         public bool ResetAIBrainOnSwap = true;
+        [Header("Weapon Switching")]
+        /// if this is true, the character should switch weapons upon swap
+        [Tooltip("if this is true, the character should switch weapons upon swap")]
+        public bool SwitchWeaponsOnSwap = false;
 
         protected string _savedPlayerID;
         protected Character.CharacterTypes _savedCharacterType;
@@ -48,16 +52,24 @@ namespace MoreMountains.TopDownEngine
             PlayAbilityStartFeedbacks();
             _character.PlayerID = PlayerID;
             _character.CharacterType = Character.CharacterTypes.Player;
-            _character.SetInputManager();
-
-            if (_character.GetComponent<CharacterInventory>() != null)
+            if (_character.GetComponent<CharacterInventory>() != null && SwitchWeaponsOnSwap && Current())
             {
-                _character.GetComponent<CharacterInventory>().SwitchWeapon();
+                Debug.Log("Swapping to!" + _character.name);
+                SwapWeapons();
             }
+            _character.SetInputManager();
             if (_aiBrain != null)
             {
                 _aiBrain.BrainActive = false;
             }
+        }
+
+        /// <summary>
+        /// Called when you want the current character to swap 
+        /// </summary>
+        public virtual void SwapWeapons()
+        {
+            _character.GetComponent<CharacterInventory>().SwitchWeapon(); 
         }
 
         /// <summary>
@@ -71,11 +83,6 @@ namespace MoreMountains.TopDownEngine
             _characterMovement.SetHorizontalMovement(0f);
             _characterMovement.SetVerticalMovement(0f);
             _character.ResetInput();
-
-            if (_character.GetComponent<CharacterInventory>() != null)
-            {
-                _character.GetComponent<CharacterInventory>().SwitchWeapon();
-            }
             if (_aiBrain != null)
             {
                 _aiBrain.BrainActive = true;
