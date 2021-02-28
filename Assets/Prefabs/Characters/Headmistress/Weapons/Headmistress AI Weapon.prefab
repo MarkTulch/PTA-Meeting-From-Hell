@@ -5082,7 +5082,7 @@ MonoBehaviour:
   Spread: {x: 0, y: 0, z: 0}
   RotateWeaponOnSpread: 1
   RandomSpread: 0
-  SpawnPosition: {x: 0.831, y: 0.073, z: 0}
+  SpawnPosition: {x: 0.56, y: 0.07, z: 0}
   TestShootButton: 0
 --- !u!114 &114345180357598506
 MonoBehaviour:
@@ -19990,7 +19990,7 @@ MonoBehaviour:
     Quantized: 0
     TargetBPM: 120
   DebugActive: 0
-  Sfx: {fileID: 8300000, guid: 3da2b314bd1a97343bae14188dcc5f30, type: 3}
+  Sfx: {fileID: 8300000, guid: e26edefc06bff1e49ab3433ae5b84c33, type: 3}
   RandomSfx: []
   TestButton: 0
   TestStopButton: 0

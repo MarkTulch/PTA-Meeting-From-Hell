@@ -517,7 +517,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Active: 1
   Label: Sound
-  Chance: 100
+  Chance: 30
   Timing:
     TimescaleMode: 0
     InitialDelay: 0
@@ -530,7 +530,7 @@ MonoBehaviour:
     Quantized: 0
     TargetBPM: 120
   DebugActive: 0
-  Sfx: {fileID: 8300000, guid: c4fe2906b4101d946a6f4e3bcb52bff5, type: 3}
+  Sfx: {fileID: 8300000, guid: 1c6b472493bf673418d01702d676e9f6, type: 3}
   RandomSfx: []
   TestButton: 0
   TestStopButton: 0

@@ -5015,7 +5015,7 @@ MonoBehaviour:
   TriggerMode: 1
   DelayBeforeUse: 0.1
   DelayBeforeUseReleaseInterruption: 1
-  TimeBetweenUses: 0.3
+  TimeBetweenUses: 0.5
   TimeBetweenUsesReleaseInterruption: 0
   MagazineBased: 0
   MagazineSize: 30
@@ -5231,7 +5231,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4921664011988614
 Transform:
   m_ObjectHideFlags: 0
@@ -19943,7 +19943,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4cf8e1825623fb34b9fc92dbef54ec56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Active: 1
+  Active: 0
   Label: Flash
   Chance: 100
   Timing:
@@ -19990,7 +19990,7 @@ MonoBehaviour:
     Quantized: 0
     TargetBPM: 120
   DebugActive: 0
-  Sfx: {fileID: 8300000, guid: 3da2b314bd1a97343bae14188dcc5f30, type: 3}
+  Sfx: {fileID: 8300000, guid: bfee9c9862af3fb4893fd4e51257dbc7, type: 3}
   RandomSfx: []
   TestButton: 0
   TestStopButton: 0

@@ -12201,6 +12201,16 @@ PrefabInstance:
       propertyPath: HUDImage
       value: 
       objectReference: {fileID: 145592855}
+    - target: {fileID: 5652248180547924036, guid: 6fcecf175c866a3468228ac7172d8c5a,
+        type: 3}
+      propertyPath: TouchTheGroundSfx.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5652248180547924036, guid: 6fcecf175c866a3468228ac7172d8c5a,
+        type: 3}
+      propertyPath: TouchTheGroundSfx.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 4822f5d8d21f3d8488459494789303ab, type: 3}
     - target: {fileID: 5652248180547924041, guid: 6fcecf175c866a3468228ac7172d8c5a,
         type: 3}
       propertyPath: HUDImage
