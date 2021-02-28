@@ -1,0 +1,15 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: HelicopterParentAnimatorController
+  m_Controller: {fileID: 9100000, guid: 91b83942a92301949b1e0d318f032906, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 39d0b3daca6388d4f9c0f3ed8726a241, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 59742d74aff69014a9e26051d9290312, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 86652de73d0844e44ace0ad75dc8f25c, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 44c30ae87e03ddd42b151263df763a5d, type: 2}

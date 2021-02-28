@@ -1,7 +1,25 @@
 fileFormatVersion: 2
 guid: 789ad0fa1945cca47a38c27e90e6c441
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 5065505271780022783
+    second: Heli.Defeated.SS_0
+  - first:
+      213: 5644627829319472079
+    second: Heli.Defeated.SS_1
+  - first:
+      213: 5481203158411266541
+    second: Heli.Defeated.SS_2
+  - first:
+      213: -5768872127097662441
+    second: Heli.Defeated.SS_3
+  - first:
+      213: -4934888875663170211
+    second: Heli.Defeated.SS_4
+  - first:
+      213: -6312197465955176117
+    second: Heli.Defeated.SS_5
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -96,11 +114,137 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Heli.Defeated.SS_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 144
+        width: 160
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff9115cd43a4c4640800000000000000
+      internalID: 5065505271780022783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heli.Defeated.SS_1
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 144
+        width: 160
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc31fdfaa1fb55e40800000000000000
+      internalID: 5644627829319472079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heli.Defeated.SS_2
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 144
+        width: 160
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de94ade5b35211c40800000000000000
+      internalID: 5481203158411266541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heli.Defeated.SS_3
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 144
+        width: 160
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71411bd7d59d0ffa0800000000000000
+      internalID: -5768872127097662441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heli.Defeated.SS_4
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 144
+        width: 160
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d55e118b6b0c38bb0800000000000000
+      internalID: -4934888875663170211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heli.Defeated.SS_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 160
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b41fe9129d19668a0800000000000000
+      internalID: -6312197465955176117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 31d54542ad719864cb6e48cbf8de64ec
     internalID: 0
     vertices: []
     indices: 
