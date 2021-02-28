@@ -11,6 +11,8 @@ public class TestInputController : MonoBehaviour
 
     private Stack<Vector3> islandPositions;
 
+    public LayerMask _bridgeMask;
+
     private void OnEnable()
     {
         IslandClickDetector.OnIslandClicked += OnIslandClicked;
@@ -43,4 +45,21 @@ public class TestInputController : MonoBehaviour
 
         groundSpriteRenderer.size = new Vector2(deltaX, 2);
     }
+
+    private void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.E))
+        {
+            var collider = Physics2D.OverlapCircle(transform.position, 1f, _bridgeMask);
+            if(collider != null)
+            {
+                collider.gameObject.GetComponent<BridgeController>().EnableBridge();
+            }
+        }
+    }
+
+    //private void OnDrawGizmos()
+    //{
+    //    Gizmos.DrawSphere(transform.position, 1f);
+    //}
 }
