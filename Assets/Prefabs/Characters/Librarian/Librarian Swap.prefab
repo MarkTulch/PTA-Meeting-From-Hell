@@ -496,3 +496,6 @@ MonoBehaviour:
     type: 3}
   PlayerWeapon: {fileID: 6422756844097702402, guid: 696358fc711909f42982ed5d50b1e244,
     type: 3}
+  HUDImage: {fileID: 0}
+  CharacterSprite: {fileID: -3239340535040806845, guid: c714a31fcd38fc747b0b5ba2d6e5b272,
+    type: 3}

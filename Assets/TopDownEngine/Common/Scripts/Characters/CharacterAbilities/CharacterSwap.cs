@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using MoreMountains.Tools;
+using UnityEngine.UI;
 
 namespace MoreMountains.TopDownEngine
 {
@@ -35,6 +36,13 @@ namespace MoreMountains.TopDownEngine
         [Tooltip("Player weapon to switch to ")]
         public Weapon PlayerWeapon;
 
+        [Header("HUD Image")]
+        /// reference to the profile HUD image
+        [Tooltip("reference to the profile HUD image")]
+        public Image HUDImage;
+        /// character's profile sprite
+        public Sprite CharacterSprite;
+
         protected string _savedPlayerID;
         protected Character.CharacterTypes _savedCharacterType;
         protected AIBrain _aiBrain;
@@ -48,6 +56,10 @@ namespace MoreMountains.TopDownEngine
             _savedCharacterType = _character.CharacterType;
             _savedPlayerID = _character.PlayerID;
             _aiBrain = this.gameObject.GetComponent<AIBrain>();
+            if (HUDImage == null )
+            {
+                HUDImage = GameObject.Find("AvatarFront").GetComponent<Image>();
+            }
         }
 
         /// <summary>
@@ -67,6 +79,7 @@ namespace MoreMountains.TopDownEngine
             {
                 SwapWeapons(false);
             }
+            HUDImage.sprite = CharacterSprite;
         }
 
         /// <summary>
