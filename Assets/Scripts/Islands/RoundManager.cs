@@ -36,6 +36,7 @@ public class RoundManager : MonoBehaviour
     private int aliveEnemies;
 
     public static Action OnPrepTimeStarted;
+    public static Action OnRoundStarted;
     public static Action<SpawnPoint> OnParentsSpawned;
 
     private List<GameObject> _parents;
@@ -76,6 +77,7 @@ public class RoundManager : MonoBehaviour
         yield return new WaitForSeconds(_prepTime);
 
         _bridgeManager.ShuffleBridges();
+        OnRoundStarted?.Invoke();
 
         foreach (var wave in _rounds[currentRound].waves)
         {
