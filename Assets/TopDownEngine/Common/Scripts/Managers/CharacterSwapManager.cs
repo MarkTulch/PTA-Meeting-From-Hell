@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+///using Cinemachine;
 using System.Collections;
 using MoreMountains.Tools;
 using System.Collections.Generic;
@@ -138,6 +139,7 @@ namespace MoreMountains.TopDownEngine
                 _characterSwapList[i].ResetCharacterSwap();
             }
 
+            /// FindObjectOfType<CinemachineVirtualCamera>().m_Lens.OrthographicSize = 20f;
             _isZoomedOut = true;
 
             LevelManager.Instance.Players[0] = null;

@@ -144,6 +144,7 @@ MonoBehaviour:
   ShouldBuffTarget: 1
   BuffApplicationTime: 2
   AttackSpeedMultiplier: 5
+  ShouldSlowTargetBridge: 0
 --- !u!1 &1881930734851166
 GameObject:
   m_ObjectHideFlags: 0
@@ -517,7 +518,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Active: 1
   Label: Sound
-  Chance: 30
+  Chance: 100
   Timing:
     TimescaleMode: 0
     InitialDelay: 0

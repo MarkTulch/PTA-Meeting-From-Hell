@@ -216,7 +216,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AbilityStartSfx: {fileID: 0}
-  AbilityInProgressSfx: {fileID: 0}
+  AbilityInProgressSfx: {fileID: 8300000, guid: b8a4f801819b0c346ae29a36b1d97888,
+    type: 3}
   AbilityStopSfx: {fileID: 0}
   AbilityStartFeedbacks: {fileID: 0}
   AbilityStopFeedbacks: {fileID: 0}
@@ -1270,7 +1271,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AbilityStartSfx: {fileID: 0}
-  AbilityInProgressSfx: {fileID: 0}
+  AbilityInProgressSfx: {fileID: 8300000, guid: 3f2ab39a1ce93d44299d5f24366b31c4,
+    type: 3}
   AbilityStopSfx: {fileID: 0}
   AbilityStartFeedbacks: {fileID: 0}
   AbilityStopFeedbacks: {fileID: 0}
@@ -2110,7 +2112,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AbilityStartSfx: {fileID: 0}
-  AbilityInProgressSfx: {fileID: 0}
+  AbilityInProgressSfx: {fileID: 8300000, guid: a7689e561d3cb2046b63b5500c74b089,
+    type: 3}
   AbilityStopSfx: {fileID: 0}
   AbilityStartFeedbacks: {fileID: 0}
   AbilityStopFeedbacks: {fileID: 0}
@@ -2723,7 +2726,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AbilityStartSfx: {fileID: 0}
-  AbilityInProgressSfx: {fileID: 0}
+  AbilityInProgressSfx: {fileID: 8300000, guid: 4822f5d8d21f3d8488459494789303ab,
+    type: 3}
   AbilityStopSfx: {fileID: 0}
   AbilityStartFeedbacks: {fileID: 0}
   AbilityStopFeedbacks: {fileID: 0}
