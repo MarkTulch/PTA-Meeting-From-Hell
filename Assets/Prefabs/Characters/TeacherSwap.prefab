@@ -227,7 +227,7 @@ MonoBehaviour:
   Movement: 0
   InputAuthorized: 1
   AnalogInput: 0
-  WalkSpeed: 12
+  WalkSpeed: 16
   ShouldSetMovement: 1
   IdleThreshold: 0.05
   Acceleration: 10
@@ -415,28 +415,28 @@ MonoBehaviour:
   - StateName: Waiting
     Actions:
       array:
-      - {fileID: 5652248178617657847}
+      - {fileID: 0}
     Transitions:
       array:
-      - Decision: {fileID: 5652248178617657843}
+      - Decision: {fileID: 0}
         TrueState: Aiming
         FalseState: 
   - StateName: Aiming
     Actions:
       array:
-      - {fileID: 5652248178617657847}
+      - {fileID: 0}
     Transitions:
       array:
-      - Decision: {fileID: 5652248178617657845}
+      - Decision: {fileID: 0}
         TrueState: Attacking
         FalseState: 
   - StateName: Attacking
     Actions:
       array:
-      - {fileID: 5652248178617657846}
+      - {fileID: 0}
     Transitions:
       array:
-      - Decision: {fileID: 5652248178617657844}
+      - Decision: {fileID: 0}
         TrueState: 
         FalseState: Waiting
   BrainActive: 1
@@ -1469,31 +1469,31 @@ MonoBehaviour:
   - StateName: Waiting
     Actions:
       array:
-      - {fileID: 5652248179766371001}
+      - {fileID: 0}
     Transitions:
       array:
-      - Decision: {fileID: 5652248179766371002}
+      - Decision: {fileID: 0}
         TrueState: Aiming
         FalseState: 
   - StateName: Aiming
     Actions:
       array:
-      - {fileID: 5652248179766371007}
+      - {fileID: 0}
     Transitions:
       array:
-      - Decision: {fileID: 5652248179766371005}
+      - Decision: {fileID: 0}
         TrueState: Attack
         FalseState: 
   - StateName: Attack
     Actions:
       array:
-      - {fileID: 5652248179766371006}
+      - {fileID: 0}
     Transitions:
       array:
-      - Decision: {fileID: 5652248179766371005}
+      - Decision: {fileID: 0}
         TrueState: 
         FalseState: Waiting
-      - Decision: {fileID: 5652248179766371004}
+      - Decision: {fileID: 0}
         TrueState: 
         FalseState: Waiting
   BrainActive: 1
@@ -2287,28 +2287,28 @@ MonoBehaviour:
   - StateName: Waiting
     Actions:
       array:
-      - {fileID: 5652248180381715966}
+      - {fileID: 0}
     Transitions:
       array:
-      - Decision: {fileID: 5652248180381715967}
+      - Decision: {fileID: 0}
         TrueState: Aiming
         FalseState: 
   - StateName: Aiming
     Actions:
       array:
-      - {fileID: 5652248180381715939}
+      - {fileID: 0}
     Transitions:
       array:
-      - Decision: {fileID: 5652248180381715937}
+      - Decision: {fileID: 0}
         TrueState: Healing
         FalseState: 
   - StateName: Healing
     Actions:
       array:
-      - {fileID: 5652248180381715938}
+      - {fileID: 0}
     Transitions:
       array:
-      - Decision: {fileID: 5652248180381715937}
+      - Decision: {fileID: 0}
         TrueState: 
         FalseState: Waiting
   BrainActive: 1
@@ -2901,31 +2901,31 @@ MonoBehaviour:
   - StateName: Waiting
     Actions:
       array:
-      - {fileID: 5652248180547924043}
+      - {fileID: 0}
     Transitions:
       array:
-      - Decision: {fileID: 5652248180547924044}
+      - Decision: {fileID: 0}
         TrueState: Aiming
         FalseState: 
   - StateName: Aiming
     Actions:
       array:
-      - {fileID: 5652248180547924080}
+      - {fileID: 0}
     Transitions:
       array:
-      - Decision: {fileID: 5652248180547924046}
+      - Decision: {fileID: 0}
         TrueState: Attacking
         FalseState: 
   - StateName: Attacking
     Actions:
       array:
-      - {fileID: 5652248180547924047}
+      - {fileID: 0}
     Transitions:
       array:
-      - Decision: {fileID: 5652248180547924045}
+      - Decision: {fileID: 0}
         TrueState: 
         FalseState: Waiting
-      - Decision: {fileID: 5652248180547924046}
+      - Decision: {fileID: 0}
         TrueState: 
         FalseState: Waiting
   BrainActive: 1
