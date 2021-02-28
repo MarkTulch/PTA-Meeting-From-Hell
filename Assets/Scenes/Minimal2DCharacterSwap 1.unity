@@ -10729,7 +10729,7 @@ PrefabInstance:
     - target: {fileID: 114248769906142106, guid: b6993e89d9af3f64182a41c77cf345c2,
         type: 3}
       propertyPath: m_ConfineScreenEdges
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114433631673107084, guid: b6993e89d9af3f64182a41c77cf345c2,
         type: 3}
@@ -15839,9 +15839,11 @@ MonoBehaviour:
   _southSpawnPoint: {fileID: 2081259003}
   _eastSpawnPoint: {fileID: 38161039}
   _westSpawnPoint: {fileID: 747652295}
-  _seekerEnemyPF: {fileID: 1631102885349161974, guid: 9bb53da902d4fc74b825d30e0aa97285,
+  _seekerEnemyPF: {fileID: 1995665707553992883, guid: 9817dd2f8153c5c468f47090baed2c1d,
     type: 3}
-  _tigerEnemyPF: {fileID: 4873870369969374310, guid: 4a1d59b55ec31704b80d22b105fd1b3c,
+  _tigerEnemyPF: {fileID: 1995665707553992883, guid: 9817dd2f8153c5c468f47090baed2c1d,
+    type: 3}
+  _helicopterEnemyPF: {fileID: 1557430809487405052, guid: 73335581d1808274393f210cd3d584dd,
     type: 3}
   _seekerTarget: {fileID: 1180442413}
   _tigerTarget: {fileID: 1180442413}
