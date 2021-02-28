@@ -15078,6 +15078,7 @@ MonoBehaviour:
   _rounds:
   - waves:
     - {fileID: 11400000, guid: 6811f246307108941b59cf453b5412e4, type: 2}
+    - {fileID: 11400000, guid: 931253997aace4e4f84a9e518908eb1e, type: 2}
   - waves:
     - {fileID: 11400000, guid: 931253997aace4e4f84a9e518908eb1e, type: 2}
   - waves:
@@ -15086,7 +15087,7 @@ MonoBehaviour:
     - {fileID: 11400000, guid: b3272c2a10732c1478d4cb6ce24c83b7, type: 2}
   _timeBetweenRounds: 10
   _timeBetweenSpawns: 1
-  _prepTime: 15
+  _prepTime: 5
   _northSpawnPoint: {fileID: 1899473043}
   _southSpawnPoint: {fileID: 2081259003}
   _eastSpawnPoint: {fileID: 38161039}
@@ -16923,6 +16924,31 @@ PrefabInstance:
     - target: {fileID: 1434389389760777659, guid: 44c90f3dc09833a4a82d5d929f1bb5da,
         type: 3}
       propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3165208053001880939, guid: 44c90f3dc09833a4a82d5d929f1bb5da,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3165208053001880939, guid: 44c90f3dc09833a4a82d5d929f1bb5da,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3165208053001880939, guid: 44c90f3dc09833a4a82d5d929f1bb5da,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3165208053001880939, guid: 44c90f3dc09833a4a82d5d929f1bb5da,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3165208053001880939, guid: 44c90f3dc09833a4a82d5d929f1bb5da,
+        type: 3}
+      propertyPath: m_textInfo.pageCount
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5271392470782694559, guid: 44c90f3dc09833a4a82d5d929f1bb5da,
