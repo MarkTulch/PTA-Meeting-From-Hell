@@ -4,6 +4,7 @@ using UnityEngine;
 using System;
 using Pathfinding;
 using MoreMountains.TopDownEngine;
+
 [Serializable]
 public class Round
 {
@@ -142,7 +143,7 @@ public class RoundManager : MonoBehaviour
         for (int i = 0; i < _spawn.amount; i++)
         {
             var parentGO = Instantiate(parent, spawnPoint.position, Quaternion.identity);
-            SetParentTarget(parentGO);
+            SetParentTarget(parentGO, _spawn.parentType);
             //parentGO.GetComponent<AIDestinationSetter>().target = (_spawn.parentType == ParentType.Seeker) ? _seekerTarget : _tigerTarget;
             aliveEnemies += 1;
 
@@ -150,9 +151,16 @@ public class RoundManager : MonoBehaviour
         }
     }
 
-    private void SetParentTarget(GameObject parentGO)
+    private void SetParentTarget(GameObject parentGO, ParentType type)
     {
-        parentGO.GetComponent<AIDestinationSetter>().target = _seekerTarget;
+        if(type == ParentType.Helicopter)
+        {
+            parentGO.GetComponent<HelicopterMover>()._target = _seekerTarget;
+        }
+        else
+        {
+            parentGO.GetComponent<AIDestinationSetter>().target = _seekerTarget;
+        }
     }
 
     private void DecrementEnemyCounter()

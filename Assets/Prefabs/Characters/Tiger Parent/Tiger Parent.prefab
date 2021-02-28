@@ -5376,6 +5376,7 @@ MonoBehaviour:
   ShouldBuffTarget: 0
   BuffApplicationTime: 1
   AttackSpeedMultiplier: 1
+  ShouldSlowTargetBridge: 0
   HitDamageableFeedback: {fileID: 0}
   HitNonDamageableFeedback: {fileID: 0}
   Owner: {fileID: 0}
@@ -5394,8 +5395,8 @@ MonoBehaviour:
   Model: {fileID: 0}
   CurrentHealth: 0
   Invulnerable: 0
-  InitialHealth: 300
-  MaximumHealth: 300
+  InitialHealth: 30
+  MaximumHealth: 30
   ImmuneToKnockback: 0
   DamageMMFeedbacks: {fileID: 5884991821820451990}
   DestroyOnDeath: 1
