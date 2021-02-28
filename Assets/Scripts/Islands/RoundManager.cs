@@ -25,6 +25,7 @@ public class RoundManager : MonoBehaviour
 
     [SerializeField] private GameObject _seekerEnemyPF;
     [SerializeField] private GameObject _tigerEnemyPF;
+    [SerializeField] private GameObject _helicopterEnemyPF;
 
     [SerializeField] private Transform _seekerTarget;
     [SerializeField] private Transform _tigerTarget;
@@ -97,9 +98,13 @@ public class RoundManager : MonoBehaviour
                 {
                     SpawnParents(spawn, _seekerEnemyPF);
                 }
-                else
+                else if(spawn.parentType == ParentType.Seeker)
                 {
                     SpawnParents(spawn, _tigerEnemyPF);
+                }
+                else
+                {
+                    SpawnParents(spawn, _helicopterEnemyPF);
                 }
                 OnParentsSpawned?.Invoke(spawn.spawnPoint);
             }
@@ -137,27 +142,17 @@ public class RoundManager : MonoBehaviour
         for (int i = 0; i < _spawn.amount; i++)
         {
             var parentGO = Instantiate(parent, spawnPoint.position, Quaternion.identity);
-            parentGO.GetComponent<AIDestinationSetter>().target = (_spawn.parentType == ParentType.Seeker) ? _seekerTarget : _tigerTarget;
+            SetParentTarget(parentGO);
+            //parentGO.GetComponent<AIDestinationSetter>().target = (_spawn.parentType == ParentType.Seeker) ? _seekerTarget : _tigerTarget;
             aliveEnemies += 1;
 
             yield return new WaitForSeconds(_timeBetweenSpawns);
         }
     }
 
-    private void SetParentTarget(GameObject parentGO, ParentType parentType)
+    private void SetParentTarget(GameObject parentGO)
     {
-        if(parentType == ParentType.Seeker)
-        {
-            var rand = UnityEngine.Random.Range(0, _parents.Count);
-
-            parentGO.GetComponent<AIDestinationSetter>().target = _seekerTarget;//_parents[rand].transform;
-
-        }
-        else
-        {
-            parentGO.GetComponent<AIDestinationSetter>().target = _seekerTarget;
-
-        }
+        parentGO.GetComponent<AIDestinationSetter>().target = _seekerTarget;
     }
 
     private void DecrementEnemyCounter()
