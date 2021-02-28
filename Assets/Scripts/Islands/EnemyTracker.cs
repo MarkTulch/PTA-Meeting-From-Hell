@@ -12,6 +12,10 @@ public class EnemyTracker : MonoBehaviour
     private float _selfDestructTime = 120;
     private float _runningTimer;
 
+    private AIPath _agent;
+
+    private float _originalSpeed; 
+
     private void OnDisable()
     {
         OnEnemyDisabled?.Invoke();
@@ -35,6 +39,30 @@ public class EnemyTracker : MonoBehaviour
         {
             OnEnemyDisabled?.Invoke();
             Destroy(gameObject);
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "Bridge")
+        {
+            if (collision.GetComponent<BridgeController>().Slows)
+            {
+                _originalSpeed = _agent.maxSpeed;
+                _agent.maxSpeed = _agent.maxSpeed / 2;
+            }
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.tag == "Bridge")
+        {
+            if(collision.GetComponent<BridgeController>().Slows)
+            {
+                _agent.maxSpeed = _originalSpeed;
+                _agent.maxSpeed = _agent.maxSpeed / 2;
+            }
         }
     }
 }

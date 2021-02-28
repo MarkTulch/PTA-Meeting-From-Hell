@@ -20,6 +20,10 @@ public class BridgeController : MonoBehaviour
 
     public Action OnBridgeDisabled;
 
+    private bool _slowEnemy = false;
+
+    public bool Slows => _slowEnemy;
+
     public void EnableBridge()
     {
         _isEnabled = true;
@@ -41,5 +45,12 @@ public class BridgeController : MonoBehaviour
         _spriteRenderer.enabled = false;
         gameObject.SetActive(true);
         OnBridgeDisabled?.Invoke();
+
+        _slowEnemy = false;
+    }
+
+    public void ActivateSlow()
+    {
+        _slowEnemy = true;
     }
 }
