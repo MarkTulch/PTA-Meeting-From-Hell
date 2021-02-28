@@ -46,11 +46,13 @@ public class BridgeController : MonoBehaviour
         gameObject.SetActive(true);
         OnBridgeDisabled?.Invoke();
 
+        _spriteRenderer.color = new Color32(255, 255, 255, 255);
         _slowEnemy = false;
     }
 
     public void ActivateSlow()
     {
+        _spriteRenderer.color = new Color32(93, 144, 255, 255);
         _slowEnemy = true;
     }
 }
