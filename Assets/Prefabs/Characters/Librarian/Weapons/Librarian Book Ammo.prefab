@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4497983437956623288}
   - component: {fileID: 4497983437956623291}
   - component: {fileID: 4497983437956623290}
-  m_Layer: 0
+  m_Layer: 18
   m_Name: TracerRound
   m_TagString: Untagged
   m_Icon: {fileID: 0}

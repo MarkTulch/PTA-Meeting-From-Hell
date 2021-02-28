@@ -51,6 +51,9 @@ public class EnemyTracker : MonoBehaviour
                 _originalSpeed = _agent.maxSpeed;
                 _agent.maxSpeed = _agent.maxSpeed / 2;
             }
+        } else if (collision.tag == "ProjectileShush")
+        {
+            _agent.maxSpeed *= 0.8f;
         }
     }
 
