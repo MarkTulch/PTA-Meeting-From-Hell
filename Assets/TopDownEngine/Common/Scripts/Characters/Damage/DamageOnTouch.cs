@@ -336,12 +336,20 @@ namespace MoreMountains.TopDownEngine
 
             HitDamageableFeedback?.PlayFeedbacks(this.transform.position);
 
-            // we apply the damage to the thing we've collided with
-            _colliderHealth.Damage(DamageCaused, gameObject, InvincibilityDuration, InvincibilityDuration);
+            if (DamageCaused < 0)
+            {
+                _colliderHealth.CurrentHealth = _colliderHealth.MaximumHealth;
+            }
+            else
+            {
+                // we apply the damage to the thing we've collided with
+                _colliderHealth.Damage(DamageCaused, gameObject, InvincibilityDuration, InvincibilityDuration);
+            }
 
             if ( _colliderCharacterHandleWeapon != null && ShouldBuffTarget == true)
             {
-                _colliderCharacterHandleWeapon.CurrentWeapon.SetTimeBetweenUsesAccelerator(AttackSpeedMultiplier, BuffApplicationTime);
+                // TODO: TURN THIS BACK ON ONCE OTHER WEAPONS ARE MADE
+                //_colliderCharacterHandleWeapon.CurrentWeapon.SetTimeBetweenUsesAccelerator(AttackSpeedMultiplier, BuffApplicationTime);
             }
 
             if (DamageTakenEveryTime + DamageTakenDamageable > 0)

@@ -641,9 +641,12 @@ MonoBehaviour:
   WeaponInventoryName: HeadmistressWeaponInventory
   HotbarInventoryName: 
   WeaponRotationMode: 0
-  AutoPickItems: []
-  AutoEquipWeaponOnStart: {fileID: 11400000, guid: d465ff3e0f911c94ba7abba8c6b48229,
-    type: 2}
+  AutoPickItems:
+  - Item: {fileID: 11400000, guid: c72971f0d10793c438f8a7dcc9c6c4d4, type: 2}
+    Quantity: 1
+  - Item: {fileID: 11400000, guid: d465ff3e0f911c94ba7abba8c6b48229, type: 2}
+    Quantity: 1
+  AutoEquipWeaponOnStart: {fileID: 0}
   CharacterHandleWeapon: {fileID: 0}
 --- !u!114 &8202364043855772171
 MonoBehaviour:
@@ -668,6 +671,10 @@ MonoBehaviour:
   Order: 1
   PlayerID: Player1
   ResetAIBrainOnSwap: 1
+  SwitchWeaponsOnSwap: 1
+  AIWeapon: {fileID: 114317679573123918, guid: d423787002a864146b2148c3550bd884, type: 3}
+  PlayerWeapon: {fileID: 114317679573123918, guid: 6667aaadca32f9e45925515db50c5a91,
+    type: 3}
 --- !u!114 &8202364043855772168
 MonoBehaviour:
   m_ObjectHideFlags: 0

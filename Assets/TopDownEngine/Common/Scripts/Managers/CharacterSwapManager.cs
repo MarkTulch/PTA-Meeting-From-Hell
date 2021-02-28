@@ -17,11 +17,15 @@ namespace MoreMountains.TopDownEngine
         /// the name of the axis to use to catch input and trigger a swap on press
         [Tooltip("the name of the axis to use to catch input and trigger a swap on press")]
         public string SwapButtonName = "Player1_SwapCharacter";
+        /// The name of the axis to use to catch input and zoom out/deselect units
+        public string ZoomOutButtonName = "ZoomOut";
         /// the PlayerID set on the Characters you want to swap between
         [Tooltip("the PlayerID set on the Characters you want to swap between")]
         public string PlayerID = "Player1";
 
         protected CharacterSwap[] _characterSwapArray;
+        protected int _currentSwapIndex;
+        protected bool _isZoomedOut;
         protected List<CharacterSwap> _characterSwapList;
         protected TopDownEngineEvent _swapEvent = new TopDownEngineEvent(TopDownEngineEventTypes.CharacterSwap, null);
 
@@ -87,6 +91,57 @@ namespace MoreMountains.TopDownEngine
             {
                 SwapCharacter();
             }
+            if (Input.GetButtonDown(ZoomOutButtonName))
+            {
+                Debug.Log("Zoomin'!");
+                if (_isZoomedOut)
+                {
+                    ZoomIn();
+                }
+                else
+                {
+                    ZoomOut();
+                }
+            }
+        }
+
+        /// <summary>
+        /// Selects the last character and zooms in 
+        /// </summary>
+        public virtual void ZoomIn()
+        {
+            _characterSwapList[_currentSwapIndex].SwapToThisCharacter();
+
+            _isZoomedOut = false;
+
+            LevelManager.Instance.Players[0] = _characterSwapList[_currentSwapIndex].gameObject.MMGetComponentNoAlloc<Character>();
+            MMEventManager.TriggerEvent(_swapEvent);
+        }
+
+        /// <summary>
+        /// Deselects the current character and zooms out
+        /// </summary>
+        public virtual void ZoomOut()
+        {
+            if (_characterSwapList.Count == 0)
+            {
+                return;
+            }
+
+            for (int i = 0; i < _characterSwapList.Count; i++)
+            {
+                if (_characterSwapList[i].Current())
+                {
+                    _characterSwapList[i].SwapWeapons(true);
+                    _currentSwapIndex = i;
+                }
+                _characterSwapList[i].ResetCharacterSwap();
+            }
+
+            _isZoomedOut = true;
+
+            LevelManager.Instance.Players[0] = null;
+            MMEventManager.TriggerEvent(_swapEvent);
         }
 
         /// <summary>
@@ -105,7 +160,7 @@ namespace MoreMountains.TopDownEngine
             {
                 if (_characterSwapList[i].Current())
                 {
-                    _characterSwapList[i].SwapWeapons();
+                    _characterSwapList[i].SwapWeapons(true);
                     newIndex = i + 1;
                 }
                 _characterSwapList[i].ResetCharacterSwap();

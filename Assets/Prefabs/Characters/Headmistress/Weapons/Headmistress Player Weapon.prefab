@@ -17,7 +17,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4595760819738216
 Transform:
   m_ObjectHideFlags: 0
@@ -5013,7 +5013,7 @@ MonoBehaviour:
   WeaponName: 
   WeaponCurrentlyActive: 1
   TriggerMode: 1
-  DelayBeforeUse: 0
+  DelayBeforeUse: 0.1
   DelayBeforeUseReleaseInterruption: 1
   TimeBetweenUses: 0.3
   TimeBetweenUsesReleaseInterruption: 0
@@ -5042,10 +5042,10 @@ MonoBehaviour:
   IdleAnimationParameter: 
   StartAnimationParameter: 
   DelayBeforeUseAnimationParameter: 
-  SingleUseAnimationParameter: SingleUse
-  UseAnimationParameter: 
+  SingleUseAnimationParameter: 
+  UseAnimationParameter: SingleUse
   DelayBetweenUsesAnimationParameter: 
-  StopAnimationParameter: 
+  StopAnimationParameter: SingleUseEnd
   ReloadStartAnimationParameter: 
   ReloadAnimationParameter: 
   ReloadStopAnimationParameter: 
@@ -5064,7 +5064,7 @@ MonoBehaviour:
   Spread: {x: 0, y: 0, z: 10}
   RotateWeaponOnSpread: 1
   RandomSpread: 0
-  SpawnPosition: {x: 60.376274, y: -30.45643, z: 0}
+  SpawnPosition: {x: 0.831, y: 0.073, z: 0}
   TestShootButton: 0
 --- !u!114 &114137986743622244
 MonoBehaviour:
@@ -5202,7 +5202,8 @@ SpriteRenderer:
   m_SortingLayerID: 47421343
   m_SortingLayer: 4
   m_SortingOrder: 5
-  m_Sprite: {fileID: 21300002, guid: 75df1bb8b302ceb4a9230d70d1b2e97e, type: 3}
+  m_Sprite: {fileID: 2839708750834963840, guid: 4daf37c1569bf194dad6921cf9ed0366,
+    type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -19772,7 +19773,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b50cd65cc53b9e46bdaae0a40ba6704, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Active: 1
+  Active: 0
   Label: Bloom
   Chance: 100
   Timing:
@@ -20012,7 +20013,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8fe7e41857f44348b52714b3238715c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Active: 1
+  Active: 0
   Label: Camera Shake
   Chance: 100
   Timing:

@@ -62,6 +62,18 @@ namespace MoreMountains.TopDownEngine
         [Tooltip("if this is true, the owner can be damaged by its own weapon's damage area (usually false)")]
         public bool CanDamageOwner = false;
 
+        [Header("Buff")]
+        [MMInformation("These settings control which buffs, if any, are applied by the object", MoreMountains.Tools.MMInformationAttribute.InformationType.Info, false)]
+        /// Whether a buff should be applied to the target struck by this projectile
+        [Tooltip("Whether a buff should be applied to the target struck by this projectile")]
+        public bool ShouldBuffTarget = false;
+        //// The amount of time that a buff should be applied
+        [Tooltip("The amount of time that a buff should be applied")]
+        public float BuffApplicationTime = 1.0f;
+        /// The attack speed multiplier applied to the target
+        [Tooltip("The attack speed multiplier applied to the target")]
+        public float AttackSpeedMultiplier = 1.0f;
+
         protected Collider _damageAreaCollider;
         protected Collider2D _damageAreaCollider2D;
         protected bool _attackInProgress = false;
@@ -162,6 +174,9 @@ namespace MoreMountains.TopDownEngine
             _damageOnTouch.InvincibilityDuration = InvincibilityDuration;
             _damageOnTouch.HitDamageableFeedback = HitDamageableFeedback;
             _damageOnTouch.HitNonDamageableFeedback = HitNonDamageableFeedback;
+            _damageOnTouch.BuffApplicationTime = BuffApplicationTime;
+            _damageOnTouch.AttackSpeedMultiplier = AttackSpeedMultiplier;
+            _damageOnTouch.ShouldBuffTarget = ShouldBuffTarget;
             
             if (!CanDamageOwner && (Owner != null))
             {

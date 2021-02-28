@@ -470,7 +470,7 @@ MonoBehaviour:
   AbilityPermitted: 1
   BlockingMovementStates: 
   BlockingConditionStates: 
-  InitialWeapon: {fileID: 958601030710374068, guid: ad0d0a26ffd63c44699830b5f9ffa5d9,
+  InitialWeapon: {fileID: 936986058603518953, guid: 24f826840e9e2d3468bb3c44c517226e,
     type: 3}
   CanPickupWeapons: 1
   WeaponUseFeedback: {fileID: 0}
@@ -506,11 +506,15 @@ MonoBehaviour:
   AbilityPermitted: 1
   BlockingMovementStates: 
   BlockingConditionStates: 
-  MainInventoryName: KoalaMainInventory
-  WeaponInventoryName: KoalaWeaponInventory
+  MainInventoryName: JanitorMainInventory
+  WeaponInventoryName: JanitorWeaponInventory
   HotbarInventoryName: 
   WeaponRotationMode: 0
-  AutoPickItems: []
+  AutoPickItems:
+  - Item: {fileID: 11400000, guid: 1b31ff1d89cb34441a997ea70313926f, type: 2}
+    Quantity: 1
+  - Item: {fileID: 11400000, guid: 1b31ff1d89cb34441a997ea70313926f, type: 2}
+    Quantity: 1
   AutoEquipWeaponOnStart: {fileID: 0}
   CharacterHandleWeapon: {fileID: 0}
 --- !u!114 &6262560849819807106
@@ -535,6 +539,11 @@ MonoBehaviour:
   BlockingConditionStates: 
   Order: 3
   PlayerID: Player1
+  ResetAIBrainOnSwap: 1
+  SwitchWeaponsOnSwap: 1
+  AIWeapon: {fileID: 936986058603518953, guid: 24f826840e9e2d3468bb3c44c517226e, type: 3}
+  PlayerWeapon: {fileID: 936986058603518953, guid: 24f826840e9e2d3468bb3c44c517226e,
+    type: 3}
 --- !u!114 &6262560849819807107
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -788,7 +797,7 @@ SpriteRenderer:
   m_SortingLayerID: 47421343
   m_SortingLayer: 4
   m_SortingOrder: 0
-  m_Sprite: {fileID: -4577266903789718890, guid: f050ae63dea9a2546a25a17a87c3782e,
+  m_Sprite: {fileID: -7939119188616482351, guid: 4d3ccbdc8ab682544b11b0ca9049ee54,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
