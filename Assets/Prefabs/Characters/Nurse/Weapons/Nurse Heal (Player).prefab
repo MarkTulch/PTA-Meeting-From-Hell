@@ -142,8 +142,9 @@ MonoBehaviour:
   InvincibilityDuration: 0.5
   CanDamageOwner: 0
   ShouldBuffTarget: 1
-  BuffApplicationTime: 2
-  AttackSpeedMultiplier: 5
+  BuffApplicationTime: 5
+  AttackSpeedMultiplier: 10
+  ShouldSlowTargetBridge: 0
 --- !u!1 &1881930734851166
 GameObject:
   m_ObjectHideFlags: 0
