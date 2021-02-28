@@ -8,7 +8,8 @@ public enum SpawnPoint
     North,
     South,
     East,
-    West
+    West,
+    Random
 }
 
 public enum ParentType
@@ -30,5 +31,6 @@ public class Wave : ScriptableObject
 {
     public List<Spawn> spawns;
     public bool shuffleBridges;
+    public float delay;
 }
 

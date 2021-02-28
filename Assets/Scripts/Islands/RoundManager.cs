@@ -35,7 +35,11 @@ public class RoundManager : MonoBehaviour
     private int currentRound = 0;
     private int aliveEnemies;
 
+    public static Action OnPrepTimeStarted;
+    public static Action OnRoundStarted;
     public static Action<SpawnPoint> OnParentsSpawned;
+
+    private List<GameObject> _parents;
 
     private void OnEnable()
     {
@@ -48,6 +52,11 @@ public class RoundManager : MonoBehaviour
         EnemyTracker.OnEnemyDisabled -= DecrementEnemyCounter;
     }
 
+    private void Start()
+    {
+        _parents = new List<GameObject>(GameObject.FindGameObjectsWithTag("Player"));
+    }
+
     private void Update()
     {
         _runningTimer += Time.deltaTime;
@@ -56,19 +65,28 @@ public class RoundManager : MonoBehaviour
         {
             _runningTimer = 0;
 
-            StartNextRound();
+            StartCoroutine(StartNextRound());
         }
     }
 
-    private void StartNextRound()
+    private IEnumerator StartNextRound()
     {
-        if(currentRound >= _rounds.Count) { return; }
+        if(currentRound >= _rounds.Count) { yield return null; }
+
+        OnPrepTimeStarted?.Invoke();
+        yield return new WaitForSeconds(_prepTime);
 
         _bridgeManager.ShuffleBridges();
+        OnRoundStarted?.Invoke();
 
         foreach (var wave in _rounds[currentRound].waves)
         {
-            if(wave.shuffleBridges && aliveEnemies == 0)
+            if(wave.delay > 0)
+            {
+                yield return new WaitForSeconds(wave.delay);
+            }
+
+            if (wave.shuffleBridges && aliveEnemies == 0)
             {
                 _bridgeManager.ShuffleBridges();
             }
@@ -106,6 +124,11 @@ public class RoundManager : MonoBehaviour
             case SpawnPoint.West:
                 StartCoroutine(Spawn(_spawn, _westSpawnPoint, parent));
                 break;
+            case SpawnPoint.Random:
+                var rand = UnityEngine.Random.Range(0, 5);
+                var spawnPoint = (rand > 0.5) ? ((rand > 0.75) ? _northSpawnPoint : _southSpawnPoint) : ((rand < 0.25) ? _eastSpawnPoint : _westSpawnPoint);
+                StartCoroutine(Spawn(_spawn, spawnPoint, parent));
+                break;
         }
     }
 
@@ -118,6 +141,22 @@ public class RoundManager : MonoBehaviour
             aliveEnemies += 1;
 
             yield return new WaitForSeconds(_timeBetweenSpawns);
+        }
+    }
+
+    private void SetParentTarget(GameObject parentGO, ParentType parentType)
+    {
+        if(parentType == ParentType.Seeker)
+        {
+            var rand = UnityEngine.Random.Range(0, _parents.Count);
+
+            parentGO.GetComponent<AIDestinationSetter>().target = _seekerTarget;//_parents[rand].transform;
+
+        }
+        else
+        {
+            parentGO.GetComponent<AIDestinationSetter>().target = _seekerTarget;
+
         }
     }
 

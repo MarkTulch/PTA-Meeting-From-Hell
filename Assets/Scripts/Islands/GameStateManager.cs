@@ -5,10 +5,14 @@ using TMPro;
 using UnityEngine.UI;
 using System;
 using UnityEngine.SceneManagement;
+using DentedPixel;
 
 public class GameStateManager : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI _complaintsText;
+    [SerializeField] private TextMeshProUGUI _prepText;
+    [SerializeField] private TextMeshProUGUI _roundStartedText;
+
     [SerializeField] private Image _stopwatchImage;
 
     [SerializeField] private float _roundTimeInMins;
@@ -22,6 +26,8 @@ public class GameStateManager : MonoBehaviour
     private void OnEnable()
     {
         EnemyTracker.OnEnemyReachedDestination += IncrementComplaints;
+        RoundManager.OnPrepTimeStarted += OnPrepTimeStarted;
+        RoundManager.OnRoundStarted += OnRoundStarted;
 
         _complaintsText.text = $"Complaints {_complaints}/10";
     }
@@ -29,6 +35,25 @@ public class GameStateManager : MonoBehaviour
     private void OnDisable()
     {
         EnemyTracker.OnEnemyReachedDestination += IncrementComplaints;
+        RoundManager.OnPrepTimeStarted -= OnPrepTimeStarted;
+        RoundManager.OnRoundStarted -= OnRoundStarted;
+
+    }
+
+    private void OnRoundStarted()
+    {
+        LeanTween.scale(_roundStartedText.gameObject, new Vector3(1, 1, 1), 1.0f).setEaseOutBounce().setOnComplete(() =>
+        {
+            LeanTween.scale(_roundStartedText.gameObject, new Vector3(0, 0, 0), 1.0f).setEaseInBounce();
+        });
+    }
+
+    private void OnPrepTimeStarted()
+    {
+        LeanTween.scale(_prepText.gameObject, new Vector3(1, 1, 1), 1.0f).setEaseOutBounce().setOnComplete( () => 
+        {
+            LeanTween.scale(_prepText.gameObject, new Vector3(0, 0, 0), 1.0f).setEaseInBounce();
+        });
     }
 
     private void IncrementComplaints()
