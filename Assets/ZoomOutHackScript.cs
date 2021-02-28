@@ -20,16 +20,7 @@ public class ZoomOutHackScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-    }
 
-
-
-    /// <summary>
-    /// If the user presses the Swap button, we swap characters
-    /// </summary>
-    protected virtual void HandleInput()
-    {
         if (Input.GetButtonDown(ZoomOutButtonName))
         {
             if (_isZoomedOut)
@@ -46,6 +37,7 @@ public class ZoomOutHackScript : MonoBehaviour
     private void ZoomIn()
     {
         FindObjectOfType<CinemachineVirtualCamera>().m_Lens.OrthographicSize = 10f;
+        FindObjectOfType<CinemachineVirtualCamera>().Follow = null;
         _isZoomedOut = false;
     }
 

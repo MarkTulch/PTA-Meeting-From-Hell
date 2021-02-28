@@ -136,8 +136,11 @@ MonoBehaviour:
     Quantized: 0
     TargetBPM: 120
   DebugActive: 0
-  Sfx: {fileID: 8300000, guid: 51f2769dc716d1148844990d0d22ecd9, type: 3}
-  RandomSfx: []
+  Sfx: {fileID: 0}
+  RandomSfx:
+  - {fileID: 8300000, guid: 574c9872fb2ae994a81d8e44952adbca, type: 3}
+  - {fileID: 8300000, guid: 111562199367df94284f780de732d6b4, type: 3}
+  - {fileID: 8300000, guid: 4e6ab02fd40e5a346892a05e093b98ea, type: 3}
   TestButton: 0
   TestStopButton: 0
   PlayMethod: 0
@@ -468,6 +471,7 @@ MonoBehaviour:
   ShouldBuffTarget: 0
   BuffApplicationTime: 1
   AttackSpeedMultiplier: 1
+  ShouldSlowTargetBridge: 0
   HitDamageableFeedback: {fileID: 0}
   HitNonDamageableFeedback: {fileID: 0}
   Owner: {fileID: 0}
@@ -1067,8 +1071,11 @@ MonoBehaviour:
     Quantized: 0
     TargetBPM: 120
   DebugActive: 0
-  Sfx: {fileID: 8300000, guid: a4ce1e0e50d887641b42f7507d3951bb, type: 3}
-  RandomSfx: []
+  Sfx: {fileID: 0}
+  RandomSfx:
+  - {fileID: 8300000, guid: cf860dc5ddec540459f29e6dd89b3bab, type: 3}
+  - {fileID: 8300000, guid: b1860ba2d1ea91a46bb8f81553b492f9, type: 3}
+  - {fileID: 8300000, guid: 9c552f1c76f0aa44e834c80c4ff69796, type: 3}
   TestButton: 0
   TestStopButton: 0
   PlayMethod: 0
