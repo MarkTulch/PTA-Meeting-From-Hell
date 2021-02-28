@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7842994265239322476}
   - component: {fileID: 606103542832538513}
   - component: {fileID: 3236434358159965576}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: South (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -81,7 +81,7 @@ GameObject:
   - component: {fileID: 7700378607598881604}
   - component: {fileID: 3254733259345268370}
   - component: {fileID: 3629562930090314149}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: South
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -151,7 +151,7 @@ GameObject:
   - component: {fileID: 6324839242954917060}
   - component: {fileID: 4734531514895800701}
   - component: {fileID: 7375927235036186582}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: East (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -221,7 +221,7 @@ GameObject:
   - component: {fileID: 8352086713690961740}
   - component: {fileID: 414944266820579754}
   - component: {fileID: 1020030545981985727}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: North
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -291,7 +291,7 @@ GameObject:
   - component: {fileID: 2235547800971010079}
   - component: {fileID: 3285317183478314418}
   - component: {fileID: 4758725838351543081}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: West
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -361,7 +361,7 @@ GameObject:
   - component: {fileID: 6055880826760977411}
   - component: {fileID: 8174517776403833189}
   - component: {fileID: 8277094988566111125}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: East
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -431,7 +431,7 @@ GameObject:
   - component: {fileID: 6832790217565735240}
   - component: {fileID: 6189340398118465769}
   - component: {fileID: 7412029303437986747}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: North (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -499,7 +499,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7028965871544584363}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Bridges
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -535,7 +535,7 @@ GameObject:
   - component: {fileID: 7028965871693681194}
   - component: {fileID: 7028965871693681193}
   - component: {fileID: 7028965871693681192}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: South
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -605,7 +605,7 @@ GameObject:
   - component: {fileID: 7028965872149012849}
   - component: {fileID: 7028965872149012848}
   - component: {fileID: 7028965872149012863}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: West
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -675,7 +675,7 @@ GameObject:
   - component: {fileID: 7028965872358584400}
   - component: {fileID: 7028965872358584415}
   - component: {fileID: 7028965872358584414}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: East
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -745,7 +745,7 @@ GameObject:
   - component: {fileID: 7028965872603936493}
   - component: {fileID: 7028965872603936492}
   - component: {fileID: 7028965872603936491}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: North
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -814,7 +814,9 @@ GameObject:
   m_Component:
   - component: {fileID: 7028965872954967709}
   - component: {fileID: 7028965872954967710}
-  m_Layer: 0
+  - component: {fileID: 8447407220275584329}
+  - component: {fileID: 708635668300229433}
+  m_Layer: 24
   m_Name: Island
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -887,6 +889,45 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &8447407220275584329
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7028965872954967696}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 4, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0.5}
+    oldSize: {x: 8, y: 8}
+    newSize: {x: 8, y: 8}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 8, y: 8}
+  m_EdgeRadius: 0
+--- !u!114 &708635668300229433
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7028965872954967696}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 231b5ff0e9e215646aee34a0fab3e773, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _connectedBridges: []
 --- !u!1 &8131215666497155770
 GameObject:
   m_ObjectHideFlags: 0
@@ -898,7 +939,7 @@ GameObject:
   - component: {fileID: 3563367858442506301}
   - component: {fileID: 4726003434955647807}
   - component: {fileID: 509166612491376625}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: West (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -966,7 +1007,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7958127361251815733}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Borders
   m_TagString: Untagged
   m_Icon: {fileID: 0}
