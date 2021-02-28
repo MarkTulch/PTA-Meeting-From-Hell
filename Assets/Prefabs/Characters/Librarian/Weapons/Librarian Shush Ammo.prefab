@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4497983437956623288}
   - component: {fileID: 4497983437956623291}
   - component: {fileID: 4497983437956623290}
-  m_Layer: 0
+  m_Layer: 26
   m_Name: TracerRound
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4823,7 +4823,7 @@ GameObject:
   - component: {fileID: 4497983438235603617}
   - component: {fileID: 4497983438235603623}
   - component: {fileID: 4497983438235603622}
-  m_Layer: 18
+  m_Layer: 26
   m_Name: ForwardPArticles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9591,7 +9591,7 @@ GameObject:
   - component: {fileID: 4497983438370398413}
   - component: {fileID: 4497983438370398412}
   - component: {fileID: 4497983438370398415}
-  m_Layer: 18
+  m_Layer: 26
   m_Name: Librarian Shush Ammo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9701,7 +9701,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TargetLayerMask:
     serializedVersion: 2
-    m_Bits: 8192
+    m_Bits: 33554432
   PerfectImpact: 0
   DamageCaused: 1
   DamageCausedKnockbackType: 0
@@ -9796,7 +9796,7 @@ GameObject:
   - component: {fileID: 4497983438538170202}
   - component: {fileID: 4497983438538170197}
   - component: {fileID: 4497983438538170196}
-  m_Layer: 18
+  m_Layer: 26
   m_Name: Shush Model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9898,7 +9898,7 @@ GameObject:
   - component: {fileID: 4497983438818254283}
   - component: {fileID: 4497983438818254281}
   - component: {fileID: 4497983438818254280}
-  m_Layer: 18
+  m_Layer: 26
   m_Name: SideParticlesBlack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14770,7 +14770,7 @@ GameObject:
   - component: {fileID: 4497983439116970260}
   - component: {fileID: 4497983439116970263}
   - component: {fileID: 4497983439116970261}
-  m_Layer: 18
+  m_Layer: 26
   m_Name: HitDamageableFeedback
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14917,7 +14917,7 @@ GameObject:
   - component: {fileID: 4497983439167675263}
   - component: {fileID: 4497983439167675257}
   - component: {fileID: 4497983439167675262}
-  m_Layer: 18
+  m_Layer: 26
   m_Name: BulletImpact
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19741,7 +19741,7 @@ GameObject:
   - component: {fileID: 4497983439693092470}
   - component: {fileID: 4497983439693092468}
   - component: {fileID: 4497983439693092471}
-  m_Layer: 18
+  m_Layer: 26
   m_Name: HitNonDamageableFeedback
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19860,7 +19860,7 @@ GameObject:
   - component: {fileID: 4497983439894945092}
   - component: {fileID: 4497983439894945098}
   - component: {fileID: 4497983439894945093}
-  m_Layer: 18
+  m_Layer: 26
   m_Name: SmokeTrail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
