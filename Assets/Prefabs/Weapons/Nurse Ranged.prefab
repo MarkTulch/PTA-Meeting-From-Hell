@@ -5015,7 +5015,7 @@ MonoBehaviour:
   TriggerMode: 1
   DelayBeforeUse: 0
   DelayBeforeUseReleaseInterruption: 1
-  TimeBetweenUses: 1
+  TimeBetweenUses: 4
   TimeBetweenUsesReleaseInterruption: 1
   MagazineBased: 0
   MagazineSize: 30
@@ -5059,7 +5059,7 @@ MonoBehaviour:
   InitializeOnStart: 1
   Interruptable: 0
   Flipped: 0
-  ProjectileSpawnOffset: {x: 0.1, y: 0.07, z: 0}
+  ProjectileSpawnOffset: {x: 1.85, y: 0.07, z: 0}
   ProjectilesPerShot: 1
   Spread: {x: 0, y: 0, z: 10}
   RotateWeaponOnSpread: 1

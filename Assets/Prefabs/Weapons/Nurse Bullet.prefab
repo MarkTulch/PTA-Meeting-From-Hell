@@ -4882,7 +4882,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1024
   PerfectImpact: 0
-  DamageCaused: -10
+  DamageCaused: 0
   DamageCausedKnockbackType: 0
   DamageCausedKnockbackDirection: 0
   DamageCausedKnockbackForce: {x: 400, y: 0, z: 0}
@@ -4894,6 +4894,9 @@ MonoBehaviour:
   DamagedTakenKnockbackDirection: 0
   DamageTakenKnockbackForce: {x: 0, y: 0, z: 0}
   DamageTakenInvincibilityDuration: 0.5
+  ShouldBuffTarget: 1
+  BuffApplicationTime: 2
+  AttackSpeedMultiplier: 5
   HitDamageableFeedback: {fileID: 5190141371420526726}
   HitNonDamageableFeedback: {fileID: 8338939277010736459}
   Owner: {fileID: 0}

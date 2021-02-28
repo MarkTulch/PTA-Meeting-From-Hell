@@ -202,6 +202,9 @@ namespace MoreMountains.TopDownEngine
         protected Animator _ownerAnimator;
         protected float _delayBeforeUseCounter = 0f;
         protected float _delayBetweenUsesCounter = 0f;
+        protected float _timeBetweenUsesAccelerator = 1f;
+        protected float OriginalTimeBetweenUses;
+        protected float TimeBetweenUsesAcceleratorDeductRate = 1f;
         protected float _reloadingCounter = 0f;
         protected bool _triggerReleased = false;
         protected bool _reloading = false;
@@ -260,6 +263,7 @@ namespace MoreMountains.TopDownEngine
             {
                 CurrentAmmoLoaded = MagazineSize;
             }
+            OriginalTimeBetweenUses = TimeBetweenUses;
             InitializeFeedbacks();       
         }
 
@@ -354,12 +358,37 @@ namespace MoreMountains.TopDownEngine
         }
 
         /// <summary>
+        /// Applies a buff for a certain length of time
+        /// </summary>
+        public void SetTimeBetweenUsesAccelerator(float accelerator, float deductRate)
+        {
+            _timeBetweenUsesAccelerator = accelerator;
+            TimeBetweenUsesAcceleratorDeductRate = deductRate;
+        }
+
+        /// <summary>
+        /// On Update, updates the DelayBetweenUses if necessary
+        /// </summary>
+        protected virtual void UpdateTimeBetweenUse()
+        {
+            if ( _timeBetweenUsesAccelerator > 1.0f )
+            {
+                TimeBetweenUses = OriginalTimeBetweenUses / _timeBetweenUsesAccelerator;
+                _timeBetweenUsesAccelerator -= TimeBetweenUsesAcceleratorDeductRate * Time.deltaTime;
+            } else
+            {
+                TimeBetweenUses = OriginalTimeBetweenUses;
+            }
+        }
+
+        /// <summary>
         /// On Update, we check if the weapon is or should be used
         /// </summary>
         protected virtual void Update()
         {
             FlipWeapon();
-            ApplyOffset();            
+            ApplyOffset();
+            UpdateTimeBetweenUse();
             UpdateAnimator();
         }
 
