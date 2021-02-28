@@ -1446,7 +1446,7 @@ MonoBehaviour:
   ResetAIBrainOnSwap: 1
   SwitchWeaponsOnSwap: 1
   AIWeapon: {fileID: 936986058603518953, guid: 24f826840e9e2d3468bb3c44c517226e, type: 3}
-  PlayerWeapon: {fileID: 936986058603518953, guid: 24f826840e9e2d3468bb3c44c517226e,
+  PlayerWeapon: {fileID: 8043662750650930171, guid: b94463606f7637043bf8ee7acf3982aa,
     type: 3}
   HUDImage: {fileID: 0}
   CharacterSprite: {fileID: 2696293284760920768, guid: df266c08260bca0499ebcae2950bc5ec,

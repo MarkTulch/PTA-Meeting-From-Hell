@@ -82,6 +82,7 @@ namespace MoreMountains.TopDownEngine
         /// The attack speed multiplier applied to the target
         [Tooltip("The attack speed multiplier applied to the target")]
         public float AttackSpeedMultiplier = 1.0f;
+        public bool ShouldSlowTargetBridge = false;
 
 
         [Header("Feedbacks")]
@@ -296,7 +297,7 @@ namespace MoreMountains.TopDownEngine
             // if what we're colliding with can't be damaged
             else
             {
-                OnCollideWithNonDamageable();
+                OnCollideWithNonDamageable(collider);
             }
         }
 
@@ -360,8 +361,15 @@ namespace MoreMountains.TopDownEngine
         /// <summary>
         /// Describes what happens when colliding with a non damageable object
         /// </summary>
-        protected virtual void OnCollideWithNonDamageable()
+        protected virtual void OnCollideWithNonDamageable(GameObject collider)
         {
+            if (ShouldSlowTargetBridge)
+            {
+                if (collider.gameObject.GetComponent<BridgeController>() != null)
+                {
+
+                }
+            }
             if (DamageTakenEveryTime + DamageTakenNonDamageable > 0)
             {
                 SelfDamage(DamageTakenEveryTime + DamageTakenNonDamageable);

@@ -74,6 +74,9 @@ namespace MoreMountains.TopDownEngine
         [Tooltip("The attack speed multiplier applied to the target")]
         public float AttackSpeedMultiplier = 1.0f;
 
+        [Header("BRIDGE SLOW")]
+        public bool ShouldSlowTargetBridge = false; 
+
         protected Collider _damageAreaCollider;
         protected Collider2D _damageAreaCollider2D;
         protected bool _attackInProgress = false;
@@ -177,6 +180,7 @@ namespace MoreMountains.TopDownEngine
             _damageOnTouch.BuffApplicationTime = BuffApplicationTime;
             _damageOnTouch.AttackSpeedMultiplier = AttackSpeedMultiplier;
             _damageOnTouch.ShouldBuffTarget = ShouldBuffTarget;
+            _damageOnTouch.ShouldSlowTargetBridge = ShouldSlowTargetBridge;
             
             if (!CanDamageOwner && (Owner != null))
             {
