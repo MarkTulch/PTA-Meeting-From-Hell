@@ -4894,6 +4894,9 @@ MonoBehaviour:
   DamagedTakenKnockbackDirection: 0
   DamageTakenKnockbackForce: {x: 0, y: 0, z: 0}
   DamageTakenInvincibilityDuration: 0.5
+  ShouldBuffTarget: 0
+  BuffApplicationTime: 1
+  AttackSpeedMultiplier: 1
   HitDamageableFeedback: {fileID: 5190141371420526726}
   HitNonDamageableFeedback: {fileID: 8338939277010736459}
   Owner: {fileID: 0}
@@ -19476,7 +19479,8 @@ SpriteRenderer:
   m_SortingLayerID: 47421343
   m_SortingLayer: 4
   m_SortingOrder: 10
-  m_Sprite: {fileID: 21300008, guid: 75df1bb8b302ceb4a9230d70d1b2e97e, type: 3}
+  m_Sprite: {fileID: 2839708750834963840, guid: 4daf37c1569bf194dad6921cf9ed0366,
+    type: 3}
   m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -19504,7 +19508,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4755177917266352
 Transform:
   m_ObjectHideFlags: 0
@@ -24328,7 +24332,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &6501732552575051032
 Transform:
   m_ObjectHideFlags: 0
@@ -24449,7 +24453,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &6838573348494149509
 Transform:
   m_ObjectHideFlags: 0

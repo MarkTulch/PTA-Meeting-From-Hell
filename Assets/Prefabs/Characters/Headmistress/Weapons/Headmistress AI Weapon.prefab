@@ -17,7 +17,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4595760819738216
 Transform:
   m_ObjectHideFlags: 0
@@ -4971,12 +4971,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4943838447161096}
-  - component: {fileID: 114317679573123918}
   - component: {fileID: 114137986743622244}
+  - component: {fileID: 114317679573123918}
   - component: {fileID: 114345180357598506}
   - component: {fileID: 114251315345146356}
   m_Layer: 0
-  m_Name: Headmistress Ranged
+  m_Name: Headmistress AI Weapon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4990,7 +4990,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1490220044263310}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.019, y: 0.003, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4322627176265138}
@@ -4998,6 +4998,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114137986743622244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1490220044263310}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b7277539b95c0d45895792ecc99ce66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MutualizeWaitingPools: 1
+  NestWaitingPool: 1
+  GameObjectToPool: {fileID: 1486318089921324, guid: 3673a4180bf6ed647b34470d6bbaa942,
+    type: 3}
+  PoolSize: 20
+  PoolCanExpand: 1
 --- !u!114 &114317679573123918
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5013,7 +5031,7 @@ MonoBehaviour:
   WeaponName: 
   WeaponCurrentlyActive: 1
   TriggerMode: 1
-  DelayBeforeUse: 0
+  DelayBeforeUse: 0.3
   DelayBeforeUseReleaseInterruption: 1
   TimeBetweenUses: 2
   TimeBetweenUsesReleaseInterruption: 1
@@ -5059,31 +5077,13 @@ MonoBehaviour:
   InitializeOnStart: 1
   Interruptable: 0
   Flipped: 0
-  ProjectileSpawnOffset: {x: 1.85, y: 0.07, z: 0}
+  ProjectileSpawnOffset: {x: 0.56, y: 0.07, z: 0}
   ProjectilesPerShot: 1
   Spread: {x: 0, y: 0, z: 0}
   RotateWeaponOnSpread: 1
   RandomSpread: 0
-  SpawnPosition: {x: 60.376274, y: -30.45643, z: 0}
+  SpawnPosition: {x: 0.831, y: 0.073, z: 0}
   TestShootButton: 0
---- !u!114 &114137986743622244
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1490220044263310}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0b7277539b95c0d45895792ecc99ce66, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MutualizeWaitingPools: 1
-  NestWaitingPool: 1
-  GameObjectToPool: {fileID: 1486318089921324, guid: 3673a4180bf6ed647b34470d6bbaa942,
-    type: 3}
-  PoolSize: 20
-  PoolCanExpand: 1
 --- !u!114 &114345180357598506
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5104,7 +5104,7 @@ MonoBehaviour:
   MinimumMagnitude: 0.2
   ReticleType: 1
   Reticle: {fileID: 1000010525066036, guid: f08bfeb16a6183b4386f121ccf51b56e, type: 3}
-  ReticleDistance: 5
+  ReticleDistance: 1
   ReticleHeight: 0
   ReticleAtMousePosition: 1
   RotateReticle: 0
@@ -5202,7 +5202,8 @@ SpriteRenderer:
   m_SortingLayerID: 47421343
   m_SortingLayer: 4
   m_SortingOrder: 5
-  m_Sprite: {fileID: 21300002, guid: 75df1bb8b302ceb4a9230d70d1b2e97e, type: 3}
+  m_Sprite: {fileID: 2839708750834963840, guid: 4daf37c1569bf194dad6921cf9ed0366,
+    type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -5230,7 +5231,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4921664011988614
 Transform:
   m_ObjectHideFlags: 0
@@ -10054,7 +10055,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4906529262087276
 Transform:
   m_ObjectHideFlags: 0
@@ -14817,7 +14818,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4284800662257128
 Transform:
   m_ObjectHideFlags: 0
@@ -19874,7 +19875,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75a83e73a8ad76c4a9a82695f98ff05e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Active: 1
+  Active: 0
   Label: Chromatic Aberration
   Chance: 100
   Timing:
@@ -19942,7 +19943,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4cf8e1825623fb34b9fc92dbef54ec56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Active: 1
+  Active: 0
   Label: Flash
   Chance: 100
   Timing:

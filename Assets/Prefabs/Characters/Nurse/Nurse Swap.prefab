@@ -571,8 +571,7 @@ MonoBehaviour:
   AbilityPermitted: 1
   BlockingMovementStates: 
   BlockingConditionStates: 
-  InitialWeapon: {fileID: 114317679573123918, guid: 57e6828c581f5074291ec2d6565030d3,
-    type: 3}
+  InitialWeapon: {fileID: 0}
   CanPickupWeapons: 1
   WeaponUseFeedback: {fileID: 0}
   WeaponAttachment: {fileID: 5284384703878409170}
@@ -607,11 +606,15 @@ MonoBehaviour:
   AbilityPermitted: 1
   BlockingMovementStates: 
   BlockingConditionStates: 
-  MainInventoryName: 
-  WeaponInventoryName: 
+  MainInventoryName: NurseMainInventory
+  WeaponInventoryName: NurseWeaponInventory
   HotbarInventoryName: 
   WeaponRotationMode: 0
-  AutoPickItems: []
+  AutoPickItems:
+  - Item: {fileID: 11400000, guid: accc2ff57d6c00a46b2237d228a22e62, type: 2}
+    Quantity: 1
+  - Item: {fileID: 11400000, guid: 6957aa937b47bde49b86ab24dad7ef01, type: 2}
+    Quantity: 1
   AutoEquipWeaponOnStart: {fileID: 0}
   CharacterHandleWeapon: {fileID: 0}
 --- !u!114 &5284384703788990757
@@ -637,7 +640,10 @@ MonoBehaviour:
   Order: 2
   PlayerID: Player1
   ResetAIBrainOnSwap: 1
-  SwitchWeaponsOnSwap: 0
+  SwitchWeaponsOnSwap: 1
+  AIWeapon: {fileID: 114594623923584052, guid: 7b210ca016695ae4a8f0bf8b1a73b21e, type: 3}
+  PlayerWeapon: {fileID: 114594623923584052, guid: 21d576c5f766bbf46bbf3739bb7bc80e,
+    type: 3}
 --- !u!114 &5284384703788990756
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -713,7 +719,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Label: 
-  Radius: 5
+  Radius: 4.26
   DetectionOriginOffset: {x: 0, y: 0, z: 0}
   TargetLayer:
     serializedVersion: 2

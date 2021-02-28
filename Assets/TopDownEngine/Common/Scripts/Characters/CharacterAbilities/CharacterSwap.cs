@@ -28,6 +28,12 @@ namespace MoreMountains.TopDownEngine
         /// if this is true, the character should switch weapons upon swap
         [Tooltip("if this is true, the character should switch weapons upon swap")]
         public bool SwitchWeaponsOnSwap = false;
+        /// first weapon to switch to 
+        [Tooltip("AI weapon to switch to ")]
+        public Weapon AIWeapon;
+        /// second weapon to switch to 
+        [Tooltip("Player weapon to switch to ")]
+        public Weapon PlayerWeapon;
 
         protected string _savedPlayerID;
         protected Character.CharacterTypes _savedCharacterType;
@@ -52,24 +58,33 @@ namespace MoreMountains.TopDownEngine
             PlayAbilityStartFeedbacks();
             _character.PlayerID = PlayerID;
             _character.CharacterType = Character.CharacterTypes.Player;
-            if (_character.GetComponent<CharacterInventory>() != null && SwitchWeaponsOnSwap && Current())
-            {
-                Debug.Log("Swapping to!" + _character.name);
-                SwapWeapons();
-            }
             _character.SetInputManager();
             if (_aiBrain != null)
             {
                 _aiBrain.BrainActive = false;
+            }
+            if (_character.GetComponent<CharacterHandleWeapon>() != null)
+            {
+                SwapWeapons(false);
             }
         }
 
         /// <summary>
         /// Called when you want the current character to swap 
         /// </summary>
-        public virtual void SwapWeapons()
+        public virtual void SwapWeapons(bool shouldEquipAIWeapon)
         {
-            _character.GetComponent<CharacterInventory>().SwitchWeapon(); 
+            if (!SwitchWeaponsOnSwap)
+            {
+                return;
+            }
+            if (!shouldEquipAIWeapon)
+            {
+                _character.GetComponent<CharacterHandleWeapon>().ChangeWeapon(PlayerWeapon, PlayerWeapon.WeaponID);
+            } else
+            {
+                _character.GetComponent<CharacterHandleWeapon>().ChangeWeapon(AIWeapon, AIWeapon.WeaponID);
+            }
         }
 
         /// <summary>

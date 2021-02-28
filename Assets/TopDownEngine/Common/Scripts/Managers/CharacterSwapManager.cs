@@ -105,7 +105,7 @@ namespace MoreMountains.TopDownEngine
             {
                 if (_characterSwapList[i].Current())
                 {
-                    _characterSwapList[i].SwapWeapons();
+                    _characterSwapList[i].SwapWeapons(true);
                     newIndex = i + 1;
                 }
                 _characterSwapList[i].ResetCharacterSwap();
