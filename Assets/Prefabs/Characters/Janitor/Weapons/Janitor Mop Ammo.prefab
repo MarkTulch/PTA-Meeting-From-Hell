@@ -4897,6 +4897,7 @@ MonoBehaviour:
   ShouldBuffTarget: 0
   BuffApplicationTime: 1
   AttackSpeedMultiplier: 1
+  ShouldSlowTargetBridge: 0
   HitDamageableFeedback: {fileID: 5190141371420526726}
   HitNonDamageableFeedback: {fileID: 8338939277010736459}
   Owner: {fileID: 0}
@@ -4914,7 +4915,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ObstaclesLayerMask:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 0
   SkinWidth: 0.1
   RepositionRigidbody: 1
 --- !u!61 &61214810784111820

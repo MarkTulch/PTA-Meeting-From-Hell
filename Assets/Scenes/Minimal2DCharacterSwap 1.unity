@@ -12371,6 +12371,11 @@ PrefabInstance:
       propertyPath: Radius
       value: 18.94
       objectReference: {fileID: 0}
+    - target: {fileID: 5652248178617657843, guid: 6fcecf175c866a3468228ac7172d8c5a,
+        type: 3}
+      propertyPath: ObstacleMask.m_Bits
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5652248178617657845, guid: 6fcecf175c866a3468228ac7172d8c5a,
         type: 3}
       propertyPath: Distance
@@ -12501,6 +12506,11 @@ PrefabInstance:
       propertyPath: Radius
       value: 28.05
       objectReference: {fileID: 0}
+    - target: {fileID: 5652248179766371002, guid: 6fcecf175c866a3468228ac7172d8c5a,
+        type: 3}
+      propertyPath: ObstacleMask.m_Bits
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5652248179766371005, guid: 6fcecf175c866a3468228ac7172d8c5a,
         type: 3}
       propertyPath: Distance
@@ -12571,6 +12581,11 @@ PrefabInstance:
       propertyPath: Radius
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 5652248180381715967, guid: 6fcecf175c866a3468228ac7172d8c5a,
+        type: 3}
+      propertyPath: ObstacleMask.m_Bits
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5652248180547924036, guid: 6fcecf175c866a3468228ac7172d8c5a,
         type: 3}
       propertyPath: ShouldSetMovement
@@ -12595,7 +12610,7 @@ PrefabInstance:
         type: 3}
       propertyPath: States.Array.data[1].Transitions.array.Array.data[0].Decision
       value: 
-      objectReference: {fileID: 620334239}
+      objectReference: {fileID: 620334238}
     - target: {fileID: 5652248180547924042, guid: 6fcecf175c866a3468228ac7172d8c5a,
         type: 3}
       propertyPath: States.Array.data[2].Actions.array.Array.data[0]
@@ -12611,6 +12626,11 @@ PrefabInstance:
       propertyPath: States.Array.data[2].Transitions.array.Array.data[1].Decision
       value: 
       objectReference: {fileID: 620334238}
+    - target: {fileID: 5652248180547924042, guid: 6fcecf175c866a3468228ac7172d8c5a,
+        type: 3}
+      propertyPath: States.Array.data[0].Transitions.array.Array.data[0].TrueState
+      value: Attacking
+      objectReference: {fileID: 0}
     - target: {fileID: 5652248180547924044, guid: 6fcecf175c866a3468228ac7172d8c5a,
         type: 3}
       propertyPath: Radius
@@ -12619,6 +12639,11 @@ PrefabInstance:
     - target: {fileID: 5652248180547924044, guid: 6fcecf175c866a3468228ac7172d8c5a,
         type: 3}
       propertyPath: ObstacleDetection
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5652248180547924044, guid: 6fcecf175c866a3468228ac7172d8c5a,
+        type: 3}
+      propertyPath: ObstacleMask.m_Bits
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5652248180547924046, guid: 6fcecf175c866a3468228ac7172d8c5a,

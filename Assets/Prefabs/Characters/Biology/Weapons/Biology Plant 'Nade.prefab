@@ -4880,7 +4880,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ObstaclesLayerMask:
     serializedVersion: 2
-    m_Bits: 8448
+    m_Bits: 8192
   SkinWidth: 0.1
   RepositionRigidbody: 1
 --- !u!61 &61214810784111820
@@ -4946,7 +4946,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8448
   PerfectImpact: 1
-  DamageCaused: 3
+  DamageCaused: 5
   DamageCausedKnockbackType: 0
   DamageCausedKnockbackDirection: 0
   DamageCausedKnockbackForce: {x: 10, y: 10, z: 0}
@@ -4961,10 +4961,11 @@ MonoBehaviour:
   ShouldBuffTarget: 0
   BuffApplicationTime: 1
   AttackSpeedMultiplier: 1
+  ShouldSlowTargetBridge: 0
   HitDamageableFeedback: {fileID: 0}
   HitNonDamageableFeedback: {fileID: 0}
   Owner: {fileID: 0}
-  _radius: 5
+  _radius: 10
 --- !u!1 &1493663112626144
 GameObject:
   m_ObjectHideFlags: 0
