@@ -37,6 +37,8 @@ public class RoundManager : MonoBehaviour
 
     public static Action<SpawnPoint> OnParentsSpawned;
 
+    private List<GameObject> _parents;
+
     private void OnEnable()
     {
         EnemyTracker.OnEnemyDisabled += DecrementEnemyCounter;
@@ -46,6 +48,11 @@ public class RoundManager : MonoBehaviour
     private void OnDisable()
     {
         EnemyTracker.OnEnemyDisabled -= DecrementEnemyCounter;
+    }
+
+    private void Start()
+    {
+        _parents = new List<GameObject>(GameObject.FindGameObjectsWithTag("Player"));
     }
 
     private void Update()
@@ -118,6 +125,22 @@ public class RoundManager : MonoBehaviour
             aliveEnemies += 1;
 
             yield return new WaitForSeconds(_timeBetweenSpawns);
+        }
+    }
+
+    private void SetParentTarget(GameObject parentGO, ParentType parentType)
+    {
+        if(parentType == ParentType.Seeker)
+        {
+            var rand = UnityEngine.Random.Range(0, _parents.Count);
+
+            parentGO.GetComponent<AIDestinationSetter>().target = _seekerTarget;//_parents[rand].transform;
+
+        }
+        else
+        {
+            parentGO.GetComponent<AIDestinationSetter>().target = _seekerTarget;
+
         }
     }
 

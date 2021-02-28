@@ -16,12 +16,14 @@ public class BridgeManager : MonoBehaviour
 
     private void Start()
     {
+        DisableAllDecisionBridges();
+
         ShuffleBridges();
     }
 
     public void ShuffleBridges()
     {
-        DisableAllDecisionBridges();
+        //DisableAllDecisionBridges();
 
         foreach (var decision in _bridgeDecisions)
         {

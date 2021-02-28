@@ -8,7 +8,8 @@ public enum SpawnPoint
     North,
     South,
     East,
-    West
+    West,
+    Random
 }
 
 public enum ParentType
@@ -23,6 +24,7 @@ public class Spawn
     public SpawnPoint spawnPoint;
     public ParentType parentType;
     public int amount;
+    public float delay;
 }
 
 [CreateAssetMenu(fileName = "Wave", menuName = "Waves/Wave", order = 1)]

@@ -18,6 +18,8 @@ public class BridgeController : MonoBehaviour
 
     public Transform EnemyWaypoint => _enemyWaypoint;
 
+    public Action OnBridgeDisabled;
+
     public void EnableBridge()
     {
         _isEnabled = true;
@@ -38,5 +40,6 @@ public class BridgeController : MonoBehaviour
         _bottomNode.enabled = true;
         _spriteRenderer.enabled = false;
         gameObject.SetActive(true);
+        OnBridgeDisabled?.Invoke();
     }
 }
