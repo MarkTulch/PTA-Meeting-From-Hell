@@ -221,7 +221,7 @@ namespace MoreMountains.TopDownEngine
         /// <param name="collider">what's colliding with the object.</param>
         public virtual void OnTriggerStay2D(Collider2D collider)
         {
-            Colliding(collider.gameObject);
+            //Colliding(collider.gameObject);
         }
 
         /// <summary>

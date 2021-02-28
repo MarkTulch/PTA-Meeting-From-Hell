@@ -1,22 +1,103 @@
 fileFormatVersion: 2
-guid: 865acc80d8d2806469a4e9c2e559a296
+guid: 715c50c938ad1af4e91ae9a1067f1b06
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5278270195836458142
-    second: lib.walk.ss_0
+      213: 1819371757281653907
+    second: ShushAttackWeapon.ss_0
   - first:
-      213: 6927660480334049684
-    second: lib.walk.ss_1
+      213: -5869326258462827998
+    second: ShushAttackWeapon.ss_1
   - first:
-      213: -1464515793677917978
-    second: lib.walk.ss_2
+      213: 2936910292023250518
+    second: ShushAttackWeapon.ss_2
   - first:
-      213: -5443109464376192314
-    second: lib.walk.ss_3
+      213: 8741844428245267216
+    second: ShushAttackWeapon.ss_3
   - first:
-      213: 489920373294968062
-    second: lib.walk.ss_4
+      213: 8691788369360093909
+    second: ShushAttackWeapon.ss_4
+  - first:
+      213: -960516028871074758
+    second: ShushAttackWeapon.ss_5
+  - first:
+      213: -4291049642811934292
+    second: ShushAttackWeapon.ss_6
+  - first:
+      213: -3349097045697003293
+    second: ShushAttackWeapon.ss_7
+  - first:
+      213: -3720013811827199175
+    second: ShushAttackWeapon.ss_8
+  - first:
+      213: 3199417363247067867
+    second: ShushAttackWeapon.ss_9
+  - first:
+      213: -8650403261368725148
+    second: ShushAttackWeapon.ss_10
+  - first:
+      213: 8374173256909413375
+    second: ShushAttackWeapon.ss_11
+  - first:
+      213: -8130161449095403383
+    second: ShushAttackWeapon.ss_12
+  - first:
+      213: -191288544883906962
+    second: ShushAttackWeapon.ss_13
+  - first:
+      213: 5000050803202056536
+    second: ShushAttackWeapon.ss_14
+  - first:
+      213: -3977742389334875809
+    second: ShushAttackWeapon.ss_15
+  - first:
+      213: -3135790689647598681
+    second: ShushAttackWeapon.ss_16
+  - first:
+      213: -2272104024443049360
+    second: ShushAttackWeapon.ss_17
+  - first:
+      213: -4578348946261532020
+    second: ShushAttackWeapon.ss_18
+  - first:
+      213: -7894886384138288764
+    second: ShushAttackWeapon.ss_19
+  - first:
+      213: 7446067289310936238
+    second: ShushAttackWeapon.ss_20
+  - first:
+      213: 7051874763905426544
+    second: ShushAttackWeapon.ss_21
+  - first:
+      213: 3296544104166437158
+    second: ShushAttackWeapon.ss_22
+  - first:
+      213: -1209567440817380191
+    second: ShushAttackWeapon.ss_23
+  - first:
+      213: -8451800810793008908
+    second: ShushAttackWeapon.ss_24
+  - first:
+      213: 248683765779968184
+    second: ShushAttackWeapon.ss_25
+  - first:
+      213: -868303207432950732
+    second: ShushAttackWeapon.ss_26
+  - first:
+      213: 3804156584254346005
+    second: ShushAttackWeapon.ss_27
+  - first:
+      213: -3006998971249608191
+    second: ShushAttackWeapon.ss_28
+  - first:
+      213: -5472718524050287516
+    second: ShushAttackWeapon.ss_29
+  - first:
+      213: 2270341461216370637
+    second: ShushAttackWeapon.ss_30
+  - first:
+      213: -4352286940858111452
+    second: ShushAttackWeapon.ss_31
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -60,7 +141,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 40
+  spritePixelsToUnits: 20
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -113,7 +194,112 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: lib.walk.ss_0
+      name: ShushAttackWeapon.ss_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 144
+        width: 160
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 394b62b49f4bf3910800000000000000
+      internalID: 1819371757281653907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShushAttackWeapon.ss_1
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 144
+        width: 160
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22a537d6dd6fb8ea0800000000000000
+      internalID: -5869326258462827998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShushAttackWeapon.ss_2
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 144
+        width: 160
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65e0c35a95002c820800000000000000
+      internalID: 2936910292023250518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShushAttackWeapon.ss_3
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 144
+        width: 160
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0137943f035415970800000000000000
+      internalID: 8741844428245267216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShushAttackWeapon.ss_4
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 144
+        width: 160
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d2849a887f6f9870800000000000000
+      internalID: 8691788369360093909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShushAttackWeapon.ss_5
       rect:
         serializedVersion: 2
         x: 0
@@ -127,92 +313,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e941d5317ce204940800000000000000
-      internalID: 5278270195836458142
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: lib.walk.ss_1
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 0
-        width: 160
-        height: 144
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 491b2d6a08ef32060800000000000000
-      internalID: 6927660480334049684
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: lib.walk.ss_2
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 0
-        width: 160
-        height: 144
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6e0e0ed15aefcabe0800000000000000
-      internalID: -1464515793677917978
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: lib.walk.ss_3
-      rect:
-        serializedVersion: 2
-        x: 480
-        y: 0
-        width: 160
-        height: 144
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6c25a4ee7c03674b0800000000000000
-      internalID: -5443109464376192314
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: lib.walk.ss_4
-      rect:
-        serializedVersion: 2
-        x: 640
-        y: 0
-        width: 160
-        height: 144
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: efc297adbfb8cc600800000000000000
-      internalID: 489920373294968062
+      spriteID: a3c1212c2cf8ba2f0800000000000000
+      internalID: -960516028871074758
       vertices: []
       indices: 
       edges: []
@@ -220,7 +322,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 4dafcd0293e18b34ebf57b5a8d0c36dd
+    spriteID: 6af4b4e1d25ed23409605568f52acef9
     internalID: 0
     vertices: []
     indices: 

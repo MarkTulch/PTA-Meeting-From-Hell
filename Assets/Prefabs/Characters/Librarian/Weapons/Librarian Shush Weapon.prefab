@@ -49,9 +49,9 @@ MonoBehaviour:
   WeaponCurrentlyActive: 1
   TriggerMode: 1
   DelayBeforeUse: 0
-  DelayBeforeUseReleaseInterruption: 1
+  DelayBeforeUseReleaseInterruption: 0
   TimeBetweenUses: 1
-  TimeBetweenUsesReleaseInterruption: 1
+  TimeBetweenUsesReleaseInterruption: 0
   MagazineBased: 0
   MagazineSize: 30
   AutoReload: 0
@@ -69,14 +69,14 @@ MonoBehaviour:
   RightHandHandle: {fileID: 0}
   ModifyMovementWhileAttacking: 0
   MovementMultiplier: 0
-  PreventAllMovementWhileInUse: 0
+  PreventAllMovementWhileInUse: 1
   RecoilForce: 0
   Animators: []
   WeaponAnimationID: 0
   IdleAnimationParameter: 
   StartAnimationParameter: 
   DelayBeforeUseAnimationParameter: 
-  SingleUseAnimationParameter: 
+  SingleUseAnimationParameter: Shush
   UseAnimationParameter: 
   DelayBetweenUsesAnimationParameter: 
   StopAnimationParameter: 
@@ -90,7 +90,7 @@ MonoBehaviour:
   WeaponStopMMFeedback: {fileID: 0}
   WeaponReloadMMFeedback: {fileID: 0}
   WeaponReloadNeededMMFeedback: {fileID: 0}
-  InitializeOnStart: 0
+  InitializeOnStart: 1
   Interruptable: 0
   Flipped: 0
   ProjectileSpawnOffset: {x: 0, y: 0, z: 0}
@@ -114,22 +114,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AimControl: 3
   RotationMode: 0
-  WeaponRotationSpeed: 1
+  WeaponRotationSpeed: 0
   MinimumAngle: -180
   MaximumAngle: 180
   MinimumMagnitude: 0.2
   ReticleType: 1
-  Reticle: {fileID: 1373789777524232, guid: f31b518c2b50cc2479370c46d4485485, type: 3}
-  ReticleDistance: 1
+  Reticle: {fileID: 1000010525066036, guid: f08bfeb16a6183b4386f121ccf51b56e, type: 3}
+  ReticleDistance: 5
   ReticleHeight: 0
-  ReticleAtMousePosition: 0
+  ReticleAtMousePosition: 1
   RotateReticle: 0
   ReplaceMousePointer: 1
   MouseDeadZoneRadius: 0.5
   DisplayReticle: 1
-  MoveCameraTargetTowardsReticle: 0
+  MoveCameraTargetTowardsReticle: 1
   CameraTargetOffset: 0.3
-  CameraTargetMaxDistance: 10
+  CameraTargetMaxDistance: 2
   CameraTargetSpeed: 5
 --- !u!114 &2590147944528295644
 MonoBehaviour:
@@ -145,6 +145,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MutualizeWaitingPools: 0
   NestWaitingPool: 1
-  GameObjectToPool: {fileID: 0}
+  GameObjectToPool: {fileID: 4497983438370398414, guid: 6536981bf8058b64581a4357063e6e7e,
+    type: 3}
   PoolSize: 20
   PoolCanExpand: 1
