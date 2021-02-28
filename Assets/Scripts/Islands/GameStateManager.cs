@@ -85,7 +85,6 @@ public class GameStateManager : MonoBehaviour
     {
         if (_complaints > 10)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
             OnPlayerLoses?.Invoke();
         }
     }

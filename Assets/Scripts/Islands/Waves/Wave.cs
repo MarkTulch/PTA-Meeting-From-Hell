@@ -15,7 +15,8 @@ public enum SpawnPoint
 public enum ParentType
 {
     Tiger,
-    Seeker
+    Seeker,
+    Helicopter
 }
 
 [Serializable]
