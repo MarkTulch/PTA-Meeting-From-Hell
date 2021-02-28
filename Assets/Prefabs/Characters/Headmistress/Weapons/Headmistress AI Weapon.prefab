@@ -5033,7 +5033,7 @@ MonoBehaviour:
   TriggerMode: 1
   DelayBeforeUse: 0.3
   DelayBeforeUseReleaseInterruption: 1
-  TimeBetweenUses: 2
+  TimeBetweenUses: 1
   TimeBetweenUsesReleaseInterruption: 1
   MagazineBased: 0
   MagazineSize: 30

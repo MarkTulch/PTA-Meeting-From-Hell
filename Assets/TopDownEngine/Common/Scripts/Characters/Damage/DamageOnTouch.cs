@@ -348,8 +348,7 @@ namespace MoreMountains.TopDownEngine
 
             if ( _colliderCharacterHandleWeapon != null && ShouldBuffTarget == true)
             {
-                // TODO: TURN THIS BACK ON ONCE OTHER WEAPONS ARE MADE
-                //_colliderCharacterHandleWeapon.CurrentWeapon.SetTimeBetweenUsesAccelerator(AttackSpeedMultiplier, BuffApplicationTime);
+                _colliderCharacterHandleWeapon.CurrentWeapon.SetTimeBetweenUsesAccelerator(AttackSpeedMultiplier, BuffApplicationTime);
             }
 
             if (DamageTakenEveryTime + DamageTakenDamageable > 0)
