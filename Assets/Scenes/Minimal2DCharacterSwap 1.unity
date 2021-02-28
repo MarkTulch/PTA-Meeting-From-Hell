@@ -7121,7 +7121,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 1
   data:
-    dataString: UEsDBBQAAAgIAACYn+v0wE5hbAIAABAFAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFlVMty4jAQ/BVK54WyzSvsbdchZA95VMhWLr4o0hirkCWXHgGS4t9XkmXssCdE98yop2fkL8SEboAYqTaK0QdJAf0cIX9GP0Y9eQ9HvJNiyz6hi3lj1FQ+CIeYF2yYdHjq07SswShGfokd98GJA61gpVT1mu4gl9poB5eYa3CUksZnCwd9jdDR/YxXPuXkTtnSnz7daZWMzu5IQBhQfeh0Pknmyyy7SWPGcpIts1m6imnpZJoks2SZZutxsgglrCAc1w1Q309fKZ3OY4lVFuKEazWG+OJEcs501InMqQk+5LjR1nXpAijDru8gzsdXwHaV8T0Mk5/KUoOJpih8umXK2ddWRb9l62mN9b4V9oG59fdk81Z7W/ThP36cBrpUsr7v7k0Tf4epGNm/4BPB2gxMH8K334VbccB8j985vFUgHuVGSSuoI42yPtVqyG77v5fW8grIvsdbqVegbXrDuxl3E/Y9nEP3x5yz+t1Tk1kLbLkMfofFAOUm88cJDmujYwmHehV/Nbzi3XC/InHHlDaOil0KL+9dWuVD0Tp45ruxJpdKQICj6AYE5ub07MqY6xFecYNrr5g77F9SvDxy3QO5SglwH58kV9SzPFyGpSt5eABdPVnDmYBetCcenU+5FKLdsKEnXdrWqhKTQdrOMvp9tRCezxZ0frNICSxgMcNjmizKklAgZArZapagsHtMuD4xf26FRnvc1ERfXLg96z4wo43CTdh2qvBhwz5rObCciVJuiQIQT22Fi3BQ7hL3KumaMmfQFoxhIswbfRWIS7IHWlwKFaHT9dEoXPRVCtSwD2k8UqA8fFEKdEbnf1BLAwQUAAAICAAAmJ/r8NNB6m0AAAB4AAAACQAkAG1ldGEuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAatWKkstKs7Mz1OyUjDRM9IzNNVRUEovSizIKAaKGII4pZkpIHa0UqKpiVmKqYWZYXKqWaqZSaJuioFZWlpySmpysnGqkaWJgVIsUH1JZUGqX2JuKkRPQGJJRlpmXkpmXrqee1FmijvIaKXYWgBQSwECLQAUAAAICAAAmJ/r9MBOYWwCAAAQBQAACwAkAAAAAAAAAAAAAAAAAAAAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFQSwECLQAUAAAICAAAmJ/r8NNB6m0AAAB4AAAACQAkAAAAAAAAAAAAAAC5AgAAbWV0YS5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0BUEsFBgAAAAACAAIAuAAAAHEDAAAAAA==
+    dataString: UEsDBBQAAAgIAACAn+v0wE5hbAIAABAFAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFlVMty4jAQ/BVK54WyzSvsbdchZA95VMhWLr4o0hirkCWXHgGS4t9XkmXssCdE98yop2fkL8SEboAYqTaK0QdJAf0cIX9GP0Y9eQ9HvJNiyz6hi3lj1FQ+CIeYF2yYdHjq07SswShGfokd98GJA61gpVT1mu4gl9poB5eYa3CUksZnCwd9jdDR/YxXPuXkTtnSnz7daZWMzu5IQBhQfeh0Pknmyyy7SWPGcpIts1m6imnpZJoks2SZZutxsgglrCAc1w1Q309fKZ3OY4lVFuKEazWG+OJEcs501InMqQk+5LjR1nXpAijDru8gzsdXwHaV8T0Mk5/KUoOJpih8umXK2ddWRb9l62mN9b4V9oG59fdk81Z7W/ThP36cBrpUsr7v7k0Tf4epGNm/4BPB2gxMH8K334VbccB8j985vFUgHuVGSSuoI42yPtVqyG77v5fW8grIvsdbqVegbXrDuxl3E/Y9nEP3x5yz+t1Tk1kLbLkMfofFAOUm88cJDmujYwmHehV/Nbzi3XC/InHHlDaOil0KL+9dWuVD0Tp45ruxJpdKQICj6AYE5ub07MqY6xFecYNrr5g77F9SvDxy3QO5SglwH58kV9SzPFyGpSt5eABdPVnDmYBetCcenU+5FKLdsKEnXdrWqhKTQdrOMvp9tRCezxZ0frNICSxgMcNjmizKklAgZArZapagsHtMuD4xf26FRnvc1ERfXLg96z4wo43CTdh2qvBhwz5rObCciVJuiQIQT22Fi3BQ7hL3KumaMmfQFoxhIswbfRWIS7IHWlwKFaHT9dEoXPRVCtSwD2k8UqA8fFEKdEbnf1BLAwQUAAAICAAAgJ/r8NNB6m0AAAB4AAAACQAkAG1ldGEuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAatWKkstKs7Mz1OyUjDRM9IzNNVRUEovSizIKAaKGII4pZkpIHa0UqKpiVmKqYWZYXKqWaqZSaJuioFZWlpySmpysnGqkaWJgVIsUH1JZUGqX2JuKkRPQGJJRlpmXkpmXrqee1FmijvIaKXYWgBQSwECLQAUAAAICAAAgJ/r9MBOYWwCAAAQBQAACwAkAAAAAAAAAAAAAAAAAAAAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFQSwECLQAUAAAICAAAgJ/r8NNB6m0AAAB4AAAACQAkAAAAAAAAAAAAAAC5AgAAbWV0YS5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0BUEsFBgAAAAACAAIAuAAAAHEDAAAAAA==
     upgradeData: 
     file_cachedStartup: {fileID: 0}
     data_cachedStartup: 
@@ -9497,7 +9497,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1180442412}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 35.14, y: 12.02, z: 0}
+  m_LocalPosition: {x: 35.12, y: 11.31, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -10719,17 +10719,12 @@ PrefabInstance:
     - target: {fileID: 20156376138150884, guid: b6993e89d9af3f64182a41c77cf345c2,
         type: 3}
       propertyPath: orthographic size
-      value: 15
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 20803883043551940, guid: b6993e89d9af3f64182a41c77cf345c2,
         type: 3}
       propertyPath: m_Enabled
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114246380927595094, guid: b6993e89d9af3f64182a41c77cf345c2,
-        type: 3}
-      propertyPath: m_Lens.m_SensorSize.x
-      value: 1.7797619
       objectReference: {fileID: 0}
     - target: {fileID: 114248769906142106, guid: b6993e89d9af3f64182a41c77cf345c2,
         type: 3}
@@ -11344,7 +11339,7 @@ PrefabInstance:
     - target: {fileID: 224643050518424086, guid: b6993e89d9af3f64182a41c77cf345c2,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -27.999985
+      value: -27.999878
       objectReference: {fileID: 0}
     - target: {fileID: 224826234474594394, guid: b6993e89d9af3f64182a41c77cf345c2,
         type: 3}
@@ -12326,16 +12321,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 5652248178617657802, guid: 6fcecf175c866a3468228ac7172d8c5a,
-        type: 3}
-      propertyPath: WalkSpeed
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 5652248178617657803, guid: 6fcecf175c866a3468228ac7172d8c5a,
-        type: 3}
-      propertyPath: RunSpeed
-      value: 20
-      objectReference: {fileID: 0}
     - target: {fileID: 5652248178617657841, guid: 6fcecf175c866a3468228ac7172d8c5a,
         type: 3}
       propertyPath: States.Array.data[2].Transitions.array.Array.size
@@ -12385,11 +12370,6 @@ PrefabInstance:
         type: 3}
       propertyPath: Radius
       value: 18.94
-      objectReference: {fileID: 0}
-    - target: {fileID: 5652248178617657843, guid: 6fcecf175c866a3468228ac7172d8c5a,
-        type: 3}
-      propertyPath: ObstacleMask.m_Bits
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5652248178617657845, guid: 6fcecf175c866a3468228ac7172d8c5a,
         type: 3}
@@ -12479,7 +12459,7 @@ PrefabInstance:
     - target: {fileID: 5652248179766370993, guid: 6fcecf175c866a3468228ac7172d8c5a,
         type: 3}
       propertyPath: WalkSpeed
-      value: 14
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5652248179766371000, guid: 6fcecf175c866a3468228ac7172d8c5a,
         type: 3}
@@ -12521,11 +12501,6 @@ PrefabInstance:
       propertyPath: Radius
       value: 28.05
       objectReference: {fileID: 0}
-    - target: {fileID: 5652248179766371002, guid: 6fcecf175c866a3468228ac7172d8c5a,
-        type: 3}
-      propertyPath: ObstacleMask.m_Bits
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5652248179766371005, guid: 6fcecf175c866a3468228ac7172d8c5a,
         type: 3}
       propertyPath: Distance
@@ -12544,7 +12519,7 @@ PrefabInstance:
     - target: {fileID: 5652248180381715959, guid: 6fcecf175c866a3468228ac7172d8c5a,
         type: 3}
       propertyPath: WalkSpeed
-      value: 12
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 5652248180381715965, guid: 6fcecf175c866a3468228ac7172d8c5a,
         type: 3}
@@ -12596,20 +12571,10 @@ PrefabInstance:
       propertyPath: Radius
       value: 5
       objectReference: {fileID: 0}
-    - target: {fileID: 5652248180381715967, guid: 6fcecf175c866a3468228ac7172d8c5a,
-        type: 3}
-      propertyPath: ObstacleMask.m_Bits
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5652248180547924036, guid: 6fcecf175c866a3468228ac7172d8c5a,
         type: 3}
       propertyPath: ShouldSetMovement
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5652248180547924036, guid: 6fcecf175c866a3468228ac7172d8c5a,
-        type: 3}
-      propertyPath: WalkSpeed
-      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5652248180547924042, guid: 6fcecf175c866a3468228ac7172d8c5a,
         type: 3}
@@ -12630,7 +12595,7 @@ PrefabInstance:
         type: 3}
       propertyPath: States.Array.data[1].Transitions.array.Array.data[0].Decision
       value: 
-      objectReference: {fileID: 620334238}
+      objectReference: {fileID: 620334239}
     - target: {fileID: 5652248180547924042, guid: 6fcecf175c866a3468228ac7172d8c5a,
         type: 3}
       propertyPath: States.Array.data[2].Actions.array.Array.data[0]
@@ -12646,11 +12611,6 @@ PrefabInstance:
       propertyPath: States.Array.data[2].Transitions.array.Array.data[1].Decision
       value: 
       objectReference: {fileID: 620334238}
-    - target: {fileID: 5652248180547924042, guid: 6fcecf175c866a3468228ac7172d8c5a,
-        type: 3}
-      propertyPath: States.Array.data[0].Transitions.array.Array.data[0].TrueState
-      value: Attacking
-      objectReference: {fileID: 0}
     - target: {fileID: 5652248180547924044, guid: 6fcecf175c866a3468228ac7172d8c5a,
         type: 3}
       propertyPath: Radius
@@ -12659,11 +12619,6 @@ PrefabInstance:
     - target: {fileID: 5652248180547924044, guid: 6fcecf175c866a3468228ac7172d8c5a,
         type: 3}
       propertyPath: ObstacleDetection
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5652248180547924044, guid: 6fcecf175c866a3468228ac7172d8c5a,
-        type: 3}
-      propertyPath: ObstacleMask.m_Bits
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5652248180547924046, guid: 6fcecf175c866a3468228ac7172d8c5a,
@@ -12681,8 +12636,7 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -4.12
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 5652248178617657803, guid: 6fcecf175c866a3468228ac7172d8c5a, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6fcecf175c866a3468228ac7172d8c5a, type: 3}
 --- !u!1001 &1453902639
 PrefabInstance:
@@ -15360,13 +15314,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1812582319}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 061bf810d56050943aa7d7885e878d24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   SwapButtonName: Player1_SwapCharacter
-  ZoomOutButtonName: Player1_ZoomOut
+  ZoomOutButtonName: ZoomOut
 --- !u!114 &1820902939 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7598164336987462287, guid: a396b48f9ea9a68469b92adb8f5f7fee,
@@ -15904,7 +15858,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rounds:
   - waves:
-    - {fileID: 11400000, guid: 6811f246307108941b59cf453b5412e4, type: 2}
+    - {fileID: 11400000, guid: 93067cc533aad2d4f87e99ed5de7c991, type: 2}
     - {fileID: 11400000, guid: 9e3d2fab4c95fb542ae7805082642f17, type: 2}
     - {fileID: 11400000, guid: fd0e9654123d05949889833afdbb36d5, type: 2}
     - {fileID: 11400000, guid: 1ed7c778a4fd39242ab4a50bce27a649, type: 2}
@@ -15928,6 +15882,31 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 10422101d6fa99143ade0579cbb8fe6e, type: 2}
     - {fileID: 11400000, guid: fdc122ec53b15f64fa13e5831d9c5ab7, type: 2}
     - {fileID: 11400000, guid: f610be60424f9b04a90e4ba35c747cbe, type: 2}
+  - waves:
+    - {fileID: 11400000, guid: 7b1405c3d2d245b45a27f722e68a483c, type: 2}
+    - {fileID: 11400000, guid: 10422101d6fa99143ade0579cbb8fe6e, type: 2}
+    - {fileID: 11400000, guid: fdc122ec53b15f64fa13e5831d9c5ab7, type: 2}
+    - {fileID: 11400000, guid: f610be60424f9b04a90e4ba35c747cbe, type: 2}
+  - waves:
+    - {fileID: 11400000, guid: 7b1405c3d2d245b45a27f722e68a483c, type: 2}
+    - {fileID: 11400000, guid: 10422101d6fa99143ade0579cbb8fe6e, type: 2}
+    - {fileID: 11400000, guid: fdc122ec53b15f64fa13e5831d9c5ab7, type: 2}
+    - {fileID: 11400000, guid: f610be60424f9b04a90e4ba35c747cbe, type: 2}
+  - waves:
+    - {fileID: 11400000, guid: 7b1405c3d2d245b45a27f722e68a483c, type: 2}
+    - {fileID: 11400000, guid: 10422101d6fa99143ade0579cbb8fe6e, type: 2}
+    - {fileID: 11400000, guid: fdc122ec53b15f64fa13e5831d9c5ab7, type: 2}
+    - {fileID: 11400000, guid: f610be60424f9b04a90e4ba35c747cbe, type: 2}
+  - waves:
+    - {fileID: 11400000, guid: 7b1405c3d2d245b45a27f722e68a483c, type: 2}
+    - {fileID: 11400000, guid: 10422101d6fa99143ade0579cbb8fe6e, type: 2}
+    - {fileID: 11400000, guid: fdc122ec53b15f64fa13e5831d9c5ab7, type: 2}
+    - {fileID: 11400000, guid: f610be60424f9b04a90e4ba35c747cbe, type: 2}
+  - waves:
+    - {fileID: 11400000, guid: 7b1405c3d2d245b45a27f722e68a483c, type: 2}
+    - {fileID: 11400000, guid: 10422101d6fa99143ade0579cbb8fe6e, type: 2}
+    - {fileID: 11400000, guid: fdc122ec53b15f64fa13e5831d9c5ab7, type: 2}
+    - {fileID: 11400000, guid: f610be60424f9b04a90e4ba35c747cbe, type: 2}
   _timeBetweenRounds: 10
   _timeBetweenSpawns: 1
   _prepTime: 5
@@ -15939,7 +15918,7 @@ MonoBehaviour:
     type: 3}
   _tigerEnemyPF: {fileID: 1995665707553992883, guid: 9817dd2f8153c5c468f47090baed2c1d,
     type: 3}
-  _helicopterEnemyPF: {fileID: 1557430809487405052, guid: 73335581d1808274393f210cd3d584dd,
+  _helicopterEnemyPF: {fileID: 1995665707553992883, guid: 9817dd2f8153c5c468f47090baed2c1d,
     type: 3}
   _seekerTarget: {fileID: 1180442413}
   _tigerTarget: {fileID: 1180442413}

@@ -10,6 +10,10 @@ public class HelicopterMover : MonoBehaviour
 
     void Update()
     {
+        if(_target == null)
+        {
+            return;
+        }
         transform.position = Vector3.MoveTowards(transform.position, _target.position, Time.deltaTime * _speed);
     }
 }

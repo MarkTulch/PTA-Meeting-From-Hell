@@ -5091,6 +5091,7 @@ GameObject:
   - component: {fileID: 1480323473442000356}
   - component: {fileID: 9032103553901929875}
   - component: {fileID: 2598818755290879683}
+  - component: {fileID: 6550586603694204120}
   m_Layer: 13
   m_Name: Tiger Parent
   m_TagString: Enemy
@@ -5400,7 +5401,7 @@ MonoBehaviour:
   ImmuneToKnockback: 0
   DamageMMFeedbacks: {fileID: 5884991821820451990}
   DestroyOnDeath: 1
-  DelayBeforeDestruction: 4
+  DelayBeforeDestruction: 0
   PointsWhenDestroyed: 0
   RespawnAtInitialLocation: 0
   DisableControllerOnDeath: 1
@@ -5764,6 +5765,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 1
   target: {fileID: 0}
+--- !u!114 &6550586603694204120
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1995665707553992883}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c71a06b895c51b747b367189e55aba45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4327997849450256774
 GameObject:
   m_ObjectHideFlags: 0

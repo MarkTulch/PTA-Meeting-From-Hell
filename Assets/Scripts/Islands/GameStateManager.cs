@@ -23,6 +23,9 @@ public class GameStateManager : MonoBehaviour
     public static Action OnPlayerWins;
     public static Action OnPlayerLoses;
 
+    [SerializeField] private AudioClip _paSound;
+    [SerializeField] private AudioSource _audioSource;
+
     private void OnEnable()
     {
         EnemyTracker.OnEnemyReachedDestination += IncrementComplaints;

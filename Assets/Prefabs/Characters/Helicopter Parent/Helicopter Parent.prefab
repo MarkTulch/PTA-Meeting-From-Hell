@@ -4928,6 +4928,7 @@ GameObject:
   - component: {fileID: 4325067301130762260}
   - component: {fileID: 8754903974179815280}
   - component: {fileID: 4652741217804281683}
+  - component: {fileID: -8499040588971225438}
   m_Layer: 25
   m_Name: Helicopter Parent
   m_TagString: Enemy
@@ -5237,7 +5238,7 @@ MonoBehaviour:
   ImmuneToKnockback: 0
   DamageMMFeedbacks: {fileID: 6882815878446842841}
   DestroyOnDeath: 1
-  DelayBeforeDestruction: 4
+  DelayBeforeDestruction: 0
   PointsWhenDestroyed: 0
   RespawnAtInitialLocation: 0
   DisableControllerOnDeath: 1
@@ -5537,6 +5538,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _target: {fileID: 0}
   _speed: 1
+--- !u!114 &-8499040588971225438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1557430809487405052}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c71a06b895c51b747b367189e55aba45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2044646191755869833
 GameObject:
   m_ObjectHideFlags: 0

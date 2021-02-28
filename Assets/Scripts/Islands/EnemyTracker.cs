@@ -24,8 +24,17 @@ public class EnemyTracker : MonoBehaviour
     private void Update()
     {
         _runningTimer += Time.deltaTime;
+        Transform target;
 
-        var target = GetComponent<AIDestinationSetter>().target;
+        if(GetComponent<AIDestinationSetter>() == null)
+        {
+            target = GetComponent<HelicopterMover>()._target;
+        }
+        else
+        {
+            target = GetComponent<AIDestinationSetter>().target;
+        }
+
         var remainingDistance = Mathf.Abs(Vector3.Distance(target.position, transform.position));
 
         if(remainingDistance < 1.0f)
@@ -46,6 +55,8 @@ public class EnemyTracker : MonoBehaviour
     {
         if (collision.tag == "Bridge")
         {
+            if (!collision.GetComponent<BridgeController>()) { return; }
+
             if (collision.GetComponent<BridgeController>().Slows)
             {
                 _originalSpeed = _agent.maxSpeed;
@@ -61,7 +72,9 @@ public class EnemyTracker : MonoBehaviour
     {
         if (collision.tag == "Bridge")
         {
-            if(collision.GetComponent<BridgeController>().Slows)
+            if (!collision.GetComponent<BridgeController>()) { return; }
+
+            if (collision.GetComponent<BridgeController>().Slows)
             {
                 _agent.maxSpeed = _originalSpeed;
                 _agent.maxSpeed = _agent.maxSpeed / 2;
