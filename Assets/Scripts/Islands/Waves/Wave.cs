@@ -24,7 +24,6 @@ public class Spawn
     public SpawnPoint spawnPoint;
     public ParentType parentType;
     public int amount;
-    public float delay;
 }
 
 [CreateAssetMenu(fileName = "Wave", menuName = "Waves/Wave", order = 1)]
@@ -32,5 +31,6 @@ public class Wave : ScriptableObject
 {
     public List<Spawn> spawns;
     public bool shuffleBridges;
+    public float delay;
 }
 

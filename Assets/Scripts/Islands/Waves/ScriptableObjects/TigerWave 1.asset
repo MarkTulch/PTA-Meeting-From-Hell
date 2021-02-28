@@ -17,3 +17,4 @@ MonoBehaviour:
     parentType: 0
     amount: 5
   shuffleBridges: 1
+  delay: 5
