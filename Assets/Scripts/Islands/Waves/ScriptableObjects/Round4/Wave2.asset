@@ -10,10 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5141bc89d43227c4f9786d60c436339e, type: 3}
-  m_Name: TestWave 3
+  m_Name: Wave2
   m_EditorClassIdentifier: 
   spawns:
-  - spawnPoint: 3
-    parentType: 1
-    amount: 7
+  - spawnPoint: 4
+    parentType: 0
+    amount: 3
   shuffleBridges: 0
+  delay: 0
