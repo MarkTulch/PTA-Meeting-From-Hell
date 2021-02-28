@@ -9497,7 +9497,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1180442412}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 31.7, y: 7.1, z: 0}
+  m_LocalPosition: {x: 35.14, y: 12.02, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -11339,7 +11339,7 @@ PrefabInstance:
     - target: {fileID: 224643050518424086, guid: b6993e89d9af3f64182a41c77cf345c2,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -27.999878
+      value: -28
       objectReference: {fileID: 0}
     - target: {fileID: 224826234474594394, guid: b6993e89d9af3f64182a41c77cf345c2,
         type: 3}
@@ -12321,6 +12321,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5652248178617657802, guid: 6fcecf175c866a3468228ac7172d8c5a,
+        type: 3}
+      propertyPath: WalkSpeed
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 5652248178617657803, guid: 6fcecf175c866a3468228ac7172d8c5a,
+        type: 3}
+      propertyPath: RunSpeed
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 5652248178617657841, guid: 6fcecf175c866a3468228ac7172d8c5a,
         type: 3}
       propertyPath: States.Array.data[2].Transitions.array.Array.size
@@ -12464,7 +12474,7 @@ PrefabInstance:
     - target: {fileID: 5652248179766370993, guid: 6fcecf175c866a3468228ac7172d8c5a,
         type: 3}
       propertyPath: WalkSpeed
-      value: 7
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 5652248179766371000, guid: 6fcecf175c866a3468228ac7172d8c5a,
         type: 3}
@@ -12529,7 +12539,7 @@ PrefabInstance:
     - target: {fileID: 5652248180381715959, guid: 6fcecf175c866a3468228ac7172d8c5a,
         type: 3}
       propertyPath: WalkSpeed
-      value: 8
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 5652248180381715965, guid: 6fcecf175c866a3468228ac7172d8c5a,
         type: 3}
@@ -12590,6 +12600,11 @@ PrefabInstance:
         type: 3}
       propertyPath: ShouldSetMovement
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5652248180547924036, guid: 6fcecf175c866a3468228ac7172d8c5a,
+        type: 3}
+      propertyPath: WalkSpeed
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5652248180547924042, guid: 6fcecf175c866a3468228ac7172d8c5a,
         type: 3}
@@ -12661,7 +12676,8 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -4.12
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5652248178617657803, guid: 6fcecf175c866a3468228ac7172d8c5a, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 6fcecf175c866a3468228ac7172d8c5a, type: 3}
 --- !u!1001 &1453902639
 PrefabInstance:
