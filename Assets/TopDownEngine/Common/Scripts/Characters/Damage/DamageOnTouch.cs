@@ -367,7 +367,8 @@ namespace MoreMountains.TopDownEngine
             {
                 if (collider.gameObject.GetComponent<BridgeController>() != null)
                 {
-
+                    Debug.Log("BUCKET DUMP");
+                    collider.gameObject.GetComponent<BridgeController>().ActivateSlow();
                 }
             }
             if (DamageTakenEveryTime + DamageTakenNonDamageable > 0)
