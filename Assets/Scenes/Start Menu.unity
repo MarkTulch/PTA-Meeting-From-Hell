@@ -2496,7 +2496,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "The Headmistres makes excellent \"points.\" \n\nPassive: Throws a pointer
+  m_text: "The Headmistress makes excellent \"points.\" \n\nPassive: Throws a pointer
     at a parent to knock some sense into them.\nActive: Manually aims her pointer,
     greatly increasing attack speed. "
   m_isRightToLeft: 0
@@ -2567,7 +2567,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: -1.319471, w: 1.4900234}
   m_textInfo:
     textComponent: {fileID: 1044004709}
-    characterCount: 181
+    characterCount: 182
     spriteCount: 0
     spaceCount: 29
     wordCount: 27
